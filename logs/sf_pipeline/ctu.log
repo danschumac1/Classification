@@ -1,0 +1,13 @@
+
+========================================
+Master Log Session at 2025-11-20 21:28:48
+========================================
+[INFO] Loaded dataset: ctu || 2025-11-20 21:28:48
+[INFO] Train size=250, Test size=100 || 2025-11-20 21:28:48
+[INFO] Loading TRAIN descriptions from ./data/features/ctu/simple.jsonl || 2025-11-20 21:28:48
+[INFO] Loaded 250 TRAIN feature strings. || 2025-11-20 21:28:48
+[INFO] Embedding TRAIN texts using model: text-embedding-3-small || 2025-11-20 21:28:48
+[INFO] Loading TEST descriptions from ./data/sample_generations/ctu/sf_classification/test_descs.jsonl || 2025-11-20 21:28:49
+[INFO] Embedding TEST descriptions... || 2025-11-20 21:28:49
+[INFO] FINAL CLASSIFICATION OUTPUTS → ./data/sample_generations/ctu/sf_classification/top-01.jsonl || 2025-11-20 21:28:50
+[INFO] Similarity-based accuracy (k=1): 64.00% || 2025-11-20 21:28:50

@@ -1,0 +1,21 @@
+
+========================================
+Master Log Session at 2025-11-20 12:27:25
+========================================
+[INFO] Clearing output file ./data/sample_generations/emg/visual_prompting/line-auto-no_ts-raw-3_shot.jsonl || 2025-11-20 12:27:25
+[INFO] Loaded dataset: emg || 2025-11-20 12:27:25
+[INFO] Train size=63, Test size=15 || 2025-11-20 12:27:25
+[INFO] Output file: ./data/sample_generations/emg/visual_prompting/line-auto-no_ts-raw-3_shot.jsonl || 2025-11-20 12:27:25
+[INFO] Generating reasoning for 9 few-shot examples... || 2025-11-20 12:27:25
+[INFO] Model = gpt-4o-mini || 2025-11-20 12:27:43
+[INFO] Batch rows: 0 → 5 || 2025-11-20 12:27:43
+[INFO] Saved prompt markdown to: ./data/sample_generations/emg/visual_prompting/prompt_examples/line-auto-no_ts-raw-3_shot.md || 2025-11-20 12:27:43
+[INFO] Sending 5 test prompts to model... || 2025-11-20 12:27:43
+[INFO] Current accuracy at idx 4:			20.00% || 2025-11-20 12:28:08
+[INFO] Batch rows: 5 → 10 || 2025-11-20 12:28:08
+[INFO] Sending 5 test prompts to model... || 2025-11-20 12:28:09
+[INFO] Current accuracy at idx 9:			40.00% || 2025-11-20 12:28:35
+[INFO] Batch rows: 10 → 15 || 2025-11-20 12:28:35
+[INFO] Sending 5 test prompts to model... || 2025-11-20 12:28:36
+[INFO] Current accuracy at idx 14:			33.33% || 2025-11-20 12:29:02
+[INFO] ✅ Finished. Results saved → ./data/sample_generations/emg/visual_prompting/line-auto-no_ts-raw-3_shot.jsonl || 2025-11-20 12:29:02

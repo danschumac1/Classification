@@ -1,0 +1,13 @@
+
+========================================
+Master Log Session at 2025-11-20 21:28:50
+========================================
+[INFO] Loaded dataset: tee || 2025-11-20 21:28:50
+[INFO] Train size=35, Test size=42 || 2025-11-20 21:28:50
+[INFO] Loading TRAIN descriptions from ./data/features/tee/simple.jsonl || 2025-11-20 21:28:50
+[INFO] Loaded 35 TRAIN feature strings. || 2025-11-20 21:28:50
+[INFO] Embedding TRAIN texts using model: text-embedding-3-small || 2025-11-20 21:28:50
+[INFO] Loading TEST descriptions from ./data/sample_generations/tee/sf_classification/test_descs.jsonl || 2025-11-20 21:28:51
+[INFO] Embedding TEST descriptions... || 2025-11-20 21:28:51
+[INFO] FINAL CLASSIFICATION OUTPUTS → ./data/sample_generations/tee/sf_classification/top-01.jsonl || 2025-11-20 21:28:51
+[INFO] Similarity-based accuracy (k=1): 42.86% || 2025-11-20 21:28:51

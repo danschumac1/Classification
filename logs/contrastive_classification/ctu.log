@@ -1,0 +1,23 @@
+
+========================================
+Master Log Session at 2025-11-24 10:40:01
+========================================
+[INFO] Loaded dataset: ctu || 2025-11-24 10:40:01
+[INFO] Test size=100 || 2025-11-24 10:40:01
+[INFO] Batch rows: 0 → 20 || 2025-11-24 10:40:01
+[INFO] Saved prompt markdown to: ./data/sample_generations/ctu/contrastive_classification/prompt_examples/cf.md || 2025-11-24 10:40:02
+[INFO] Sending 20 test prompts to model... || 2025-11-24 10:40:02
+[INFO] Current accuracy at idx 19:			25.00% || 2025-11-24 10:40:19
+[INFO] Batch rows: 20 → 40 || 2025-11-24 10:40:19
+[INFO] Sending 20 test prompts to model... || 2025-11-24 10:40:21
+[INFO] Current accuracy at idx 39:			37.50% || 2025-11-24 10:40:40
+[INFO] Batch rows: 40 → 60 || 2025-11-24 10:40:40
+[INFO] Sending 20 test prompts to model... || 2025-11-24 10:40:41
+[INFO] Current accuracy at idx 59:			28.33% || 2025-11-24 10:41:00
+[INFO] Batch rows: 60 → 80 || 2025-11-24 10:41:00
+[INFO] Sending 20 test prompts to model... || 2025-11-24 10:41:02
+[INFO] Current accuracy at idx 79:			30.00% || 2025-11-24 10:41:17
+[INFO] Batch rows: 80 → 100 || 2025-11-24 10:41:17
+[INFO] Sending 20 test prompts to model... || 2025-11-24 10:41:18
+[INFO] Current accuracy at idx 99:			32.00% || 2025-11-24 10:41:33
+[INFO] ✅ Finished. Results saved → ./data/sample_generations/ctu/contrastive_classification/cf.jsonl || 2025-11-24 10:41:33

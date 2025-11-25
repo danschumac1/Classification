@@ -1,0 +1,80 @@
+####################################################################################################
+# THINGS TO DO
+####################################################################################################
+1. Run similarity between the final contrastive feature descriptions and the general generated descriptions
+2. use the contrastive summaries to pick from the top k candidates.
+3. redo cf_classification_v0 with auto-CoT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let k equal the number of examples for each class we provide the model (idk maybe k=3)
+let Z be the number of classes (Z reaches 7 in our datasets)
+
+
+concat all classes before computing cosine similarity
+
+-------------------------------------
+OPTION 1: one big prompt
+    note -> IDK how many images I can send. 
+    if k = 3, and Z = 7 we'd be sending a max of 21 images to model.
+    is k = 3 examples enough to capture class features?
+-------------------------------------
+
+Here are k images of class A, k images of class B, ..., and k images of class Z
+What do the images of class A all have in common
+What do the images of class B all have in common? 
+What are the differences in images of the A class and images of the B class? 
+
+-------------------------------------
+OPTION 2: explain commonality first
+-------------------------------------
+Here are k images of class A 
+What do the images of class A all have in common?
+
+Here are k images of class B
+What do the images of class B all have in common? 
+
+...
+
+Here are k images of class Z
+what do the images of class Z all have in common?
+
+
+Given the textual summaries of class A, Class B, ..., and class Z , what differneces can you identify?
+What are the differences in images of the A class and images of the B class? 
+
+-------------------------------------
+OPTION 3: pairwise comparisons
+    note -> # if Z = 7, 28 pairwise comparisons, (7! but with addition)
+-------------------------------------
+Here are k images of class A and k images of class B
+first describe each class
+then describe the differences between the classes
+
+A & B
+...
+A & Z
+
+B & C
+...
+Z-1 Z
+
+

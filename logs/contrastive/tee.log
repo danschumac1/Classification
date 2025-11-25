@@ -1,0 +1,348 @@
+
+========================================
+Master Log Session at 2025-11-21 14:44:35
+========================================
+[INFO] Loaded dataset: tee || 2025-11-21 14:44:35
+[INFO] Train size=35, Test size=42 || 2025-11-21 14:44:35
+[INFO] Starting contrastive summarization on TRAIN split... || 2025-11-21 14:44:35
+[INFO] Label ids: [0, 1, 2, 3, 4, 5, 6] || 2025-11-21 14:44:35
+[INFO] Number of class pairs: 21 || 2025-11-21 14:44:35
+[INFO] Processing pair: 0 (CG Positive Initial Return Stroke) vs 1 (IR Negative Initial Return Stroke) || 2025-11-21 14:44:35
+[INFO]   Round 1/5 for pair CG_Positive_Initial_Return_Stroke-IR_Negative_Initial_Return_Stroke || 2025-11-21 14:44:35
+[INFO] Saved example prompt markdown to: ./data/features/tee/prompt_examples/train_10-imgs_5-rounds_contrastive_prompt.md || 2025-11-21 14:44:36
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:44:36
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=1 for CG_Positive_Initial_Return_Stroke-IR_Negative_Initial_Return_Stroke) || 2025-11-21 14:44:50
+[INFO]   Round 2/5 for pair CG_Positive_Initial_Return_Stroke-IR_Negative_Initial_Return_Stroke || 2025-11-21 14:44:50
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:44:50
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=2 for CG_Positive_Initial_Return_Stroke-IR_Negative_Initial_Return_Stroke) || 2025-11-21 14:45:02
+[INFO]   Round 3/5 for pair CG_Positive_Initial_Return_Stroke-IR_Negative_Initial_Return_Stroke || 2025-11-21 14:45:02
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:45:03
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=3 for CG_Positive_Initial_Return_Stroke-IR_Negative_Initial_Return_Stroke) || 2025-11-21 14:45:16
+[INFO]   Round 4/5 for pair CG_Positive_Initial_Return_Stroke-IR_Negative_Initial_Return_Stroke || 2025-11-21 14:45:16
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:45:16
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=4 for CG_Positive_Initial_Return_Stroke-IR_Negative_Initial_Return_Stroke) || 2025-11-21 14:45:29
+[INFO]   Round 5/5 for pair CG_Positive_Initial_Return_Stroke-IR_Negative_Initial_Return_Stroke || 2025-11-21 14:45:29
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:45:30
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=5 for CG_Positive_Initial_Return_Stroke-IR_Negative_Initial_Return_Stroke) || 2025-11-21 14:45:41
+[INFO] Processing pair: 0 (CG Positive Initial Return Stroke) vs 2 (SR Subsequent Negative Return Stroke) || 2025-11-21 14:45:41
+[INFO]   Round 1/5 for pair CG_Positive_Initial_Return_Stroke-SR_Subsequent_Negative_Return_Stroke || 2025-11-21 14:45:41
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:45:42
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=1 for CG_Positive_Initial_Return_Stroke-SR_Subsequent_Negative_Return_Stroke) || 2025-11-21 14:45:55
+[INFO]   Round 2/5 for pair CG_Positive_Initial_Return_Stroke-SR_Subsequent_Negative_Return_Stroke || 2025-11-21 14:45:55
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:45:55
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=2 for CG_Positive_Initial_Return_Stroke-SR_Subsequent_Negative_Return_Stroke) || 2025-11-21 14:46:09
+[INFO]   Round 3/5 for pair CG_Positive_Initial_Return_Stroke-SR_Subsequent_Negative_Return_Stroke || 2025-11-21 14:46:09
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:46:09
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=3 for CG_Positive_Initial_Return_Stroke-SR_Subsequent_Negative_Return_Stroke) || 2025-11-21 14:46:24
+[INFO]   Round 4/5 for pair CG_Positive_Initial_Return_Stroke-SR_Subsequent_Negative_Return_Stroke || 2025-11-21 14:46:24
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:46:24
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=4 for CG_Positive_Initial_Return_Stroke-SR_Subsequent_Negative_Return_Stroke) || 2025-11-21 14:46:39
+[INFO]   Round 5/5 for pair CG_Positive_Initial_Return_Stroke-SR_Subsequent_Negative_Return_Stroke || 2025-11-21 14:46:39
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:46:40
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=5 for CG_Positive_Initial_Return_Stroke-SR_Subsequent_Negative_Return_Stroke) || 2025-11-21 14:47:00
+[INFO] Processing pair: 0 (CG Positive Initial Return Stroke) vs 3 (I Impulsive Event) || 2025-11-21 14:47:00
+[INFO]   Round 1/5 for pair CG_Positive_Initial_Return_Stroke-I_Impulsive_Event || 2025-11-21 14:47:00
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:47:00
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=1 for CG_Positive_Initial_Return_Stroke-I_Impulsive_Event) || 2025-11-21 14:47:14
+[INFO]   Round 2/5 for pair CG_Positive_Initial_Return_Stroke-I_Impulsive_Event || 2025-11-21 14:47:14
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:47:14
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=2 for CG_Positive_Initial_Return_Stroke-I_Impulsive_Event) || 2025-11-21 14:47:34
+[INFO]   Round 3/5 for pair CG_Positive_Initial_Return_Stroke-I_Impulsive_Event || 2025-11-21 14:47:34
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:47:34
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=3 for CG_Positive_Initial_Return_Stroke-I_Impulsive_Event) || 2025-11-21 14:47:46
+[INFO]   Round 4/5 for pair CG_Positive_Initial_Return_Stroke-I_Impulsive_Event || 2025-11-21 14:47:46
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:47:47
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=4 for CG_Positive_Initial_Return_Stroke-I_Impulsive_Event) || 2025-11-21 14:48:02
+[INFO]   Round 5/5 for pair CG_Positive_Initial_Return_Stroke-I_Impulsive_Event || 2025-11-21 14:48:02
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:48:02
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=5 for CG_Positive_Initial_Return_Stroke-I_Impulsive_Event) || 2025-11-21 14:48:15
+[INFO] Processing pair: 0 (CG Positive Initial Return Stroke) vs 4 (I2 Impulsive Event Pair (TIPP)) || 2025-11-21 14:48:15
+[INFO]   Round 1/5 for pair CG_Positive_Initial_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP) || 2025-11-21 14:48:15
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:48:16
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=1 for CG_Positive_Initial_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP)) || 2025-11-21 14:48:29
+[INFO]   Round 2/5 for pair CG_Positive_Initial_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP) || 2025-11-21 14:48:29
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:48:30
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=2 for CG_Positive_Initial_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP)) || 2025-11-21 14:48:40
+[INFO]   Round 3/5 for pair CG_Positive_Initial_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP) || 2025-11-21 14:48:40
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:48:41
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=3 for CG_Positive_Initial_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP)) || 2025-11-21 14:48:52
+[INFO]   Round 4/5 for pair CG_Positive_Initial_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP) || 2025-11-21 14:48:52
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:48:53
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=4 for CG_Positive_Initial_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP)) || 2025-11-21 14:49:05
+[INFO]   Round 5/5 for pair CG_Positive_Initial_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP) || 2025-11-21 14:49:05
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:49:06
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=5 for CG_Positive_Initial_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP)) || 2025-11-21 14:49:16
+[INFO] Processing pair: 0 (CG Positive Initial Return Stroke) vs 5 (KM Gradual Intra-Cloud Stroke) || 2025-11-21 14:49:16
+[INFO]   Round 1/5 for pair CG_Positive_Initial_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke || 2025-11-21 14:49:16
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:49:17
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=1 for CG_Positive_Initial_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke) || 2025-11-21 14:49:29
+[INFO]   Round 2/5 for pair CG_Positive_Initial_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke || 2025-11-21 14:49:29
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:49:29
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=2 for CG_Positive_Initial_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke) || 2025-11-21 14:49:44
+[INFO]   Round 3/5 for pair CG_Positive_Initial_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke || 2025-11-21 14:49:44
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:49:44
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=3 for CG_Positive_Initial_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke) || 2025-11-21 14:49:59
+[INFO]   Round 4/5 for pair CG_Positive_Initial_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke || 2025-11-21 14:49:59
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:49:59
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=4 for CG_Positive_Initial_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke) || 2025-11-21 14:50:11
+[INFO]   Round 5/5 for pair CG_Positive_Initial_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke || 2025-11-21 14:50:11
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:50:12
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=5 for CG_Positive_Initial_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke) || 2025-11-21 14:50:25
+[INFO] Processing pair: 0 (CG Positive Initial Return Stroke) vs 6 (O Off-record) || 2025-11-21 14:50:25
+[INFO]   Round 1/5 for pair CG_Positive_Initial_Return_Stroke-O_Off-record || 2025-11-21 14:50:25
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:50:26
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=1 for CG_Positive_Initial_Return_Stroke-O_Off-record) || 2025-11-21 14:50:42
+[INFO]   Round 2/5 for pair CG_Positive_Initial_Return_Stroke-O_Off-record || 2025-11-21 14:50:42
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:50:42
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=2 for CG_Positive_Initial_Return_Stroke-O_Off-record) || 2025-11-21 14:50:55
+[INFO]   Round 3/5 for pair CG_Positive_Initial_Return_Stroke-O_Off-record || 2025-11-21 14:50:55
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:50:56
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=3 for CG_Positive_Initial_Return_Stroke-O_Off-record) || 2025-11-21 14:51:08
+[INFO]   Round 4/5 for pair CG_Positive_Initial_Return_Stroke-O_Off-record || 2025-11-21 14:51:08
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:51:09
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=4 for CG_Positive_Initial_Return_Stroke-O_Off-record) || 2025-11-21 14:51:22
+[INFO]   Round 5/5 for pair CG_Positive_Initial_Return_Stroke-O_Off-record || 2025-11-21 14:51:22
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:51:23
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=5 for CG_Positive_Initial_Return_Stroke-O_Off-record) || 2025-11-21 14:51:42
+[INFO] Processing pair: 1 (IR Negative Initial Return Stroke) vs 2 (SR Subsequent Negative Return Stroke) || 2025-11-21 14:51:42
+[INFO]   Round 1/5 for pair IR_Negative_Initial_Return_Stroke-SR_Subsequent_Negative_Return_Stroke || 2025-11-21 14:51:42
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:51:43
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=1 for IR_Negative_Initial_Return_Stroke-SR_Subsequent_Negative_Return_Stroke) || 2025-11-21 14:51:55
+[INFO]   Round 2/5 for pair IR_Negative_Initial_Return_Stroke-SR_Subsequent_Negative_Return_Stroke || 2025-11-21 14:51:55
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:51:56
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=2 for IR_Negative_Initial_Return_Stroke-SR_Subsequent_Negative_Return_Stroke) || 2025-11-21 14:52:08
+[INFO]   Round 3/5 for pair IR_Negative_Initial_Return_Stroke-SR_Subsequent_Negative_Return_Stroke || 2025-11-21 14:52:08
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:52:09
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=3 for IR_Negative_Initial_Return_Stroke-SR_Subsequent_Negative_Return_Stroke) || 2025-11-21 14:52:25
+[INFO]   Round 4/5 for pair IR_Negative_Initial_Return_Stroke-SR_Subsequent_Negative_Return_Stroke || 2025-11-21 14:52:25
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:52:25
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=4 for IR_Negative_Initial_Return_Stroke-SR_Subsequent_Negative_Return_Stroke) || 2025-11-21 14:52:43
+[INFO]   Round 5/5 for pair IR_Negative_Initial_Return_Stroke-SR_Subsequent_Negative_Return_Stroke || 2025-11-21 14:52:43
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:52:43
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=5 for IR_Negative_Initial_Return_Stroke-SR_Subsequent_Negative_Return_Stroke) || 2025-11-21 14:52:58
+[INFO] Processing pair: 1 (IR Negative Initial Return Stroke) vs 3 (I Impulsive Event) || 2025-11-21 14:52:58
+[INFO]   Round 1/5 for pair IR_Negative_Initial_Return_Stroke-I_Impulsive_Event || 2025-11-21 14:52:58
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:52:58
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=1 for IR_Negative_Initial_Return_Stroke-I_Impulsive_Event) || 2025-11-21 14:53:10
+[INFO]   Round 2/5 for pair IR_Negative_Initial_Return_Stroke-I_Impulsive_Event || 2025-11-21 14:53:10
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:53:10
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=2 for IR_Negative_Initial_Return_Stroke-I_Impulsive_Event) || 2025-11-21 14:53:22
+[INFO]   Round 3/5 for pair IR_Negative_Initial_Return_Stroke-I_Impulsive_Event || 2025-11-21 14:53:22
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:53:23
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=3 for IR_Negative_Initial_Return_Stroke-I_Impulsive_Event) || 2025-11-21 14:53:43
+[INFO]   Round 4/5 for pair IR_Negative_Initial_Return_Stroke-I_Impulsive_Event || 2025-11-21 14:53:43
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:53:43
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=4 for IR_Negative_Initial_Return_Stroke-I_Impulsive_Event) || 2025-11-21 14:53:54
+[INFO]   Round 5/5 for pair IR_Negative_Initial_Return_Stroke-I_Impulsive_Event || 2025-11-21 14:53:54
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:53:55
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=5 for IR_Negative_Initial_Return_Stroke-I_Impulsive_Event) || 2025-11-21 14:54:08
+[INFO] Processing pair: 1 (IR Negative Initial Return Stroke) vs 4 (I2 Impulsive Event Pair (TIPP)) || 2025-11-21 14:54:08
+[INFO]   Round 1/5 for pair IR_Negative_Initial_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP) || 2025-11-21 14:54:08
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:54:09
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=1 for IR_Negative_Initial_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP)) || 2025-11-21 14:54:23
+[INFO]   Round 2/5 for pair IR_Negative_Initial_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP) || 2025-11-21 14:54:23
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:54:24
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=2 for IR_Negative_Initial_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP)) || 2025-11-21 14:54:36
+[INFO]   Round 3/5 for pair IR_Negative_Initial_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP) || 2025-11-21 14:54:36
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:54:37
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=3 for IR_Negative_Initial_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP)) || 2025-11-21 14:54:47
+[INFO]   Round 4/5 for pair IR_Negative_Initial_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP) || 2025-11-21 14:54:47
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:54:48
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=4 for IR_Negative_Initial_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP)) || 2025-11-21 14:55:03
+[INFO]   Round 5/5 for pair IR_Negative_Initial_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP) || 2025-11-21 14:55:03
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:55:04
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=5 for IR_Negative_Initial_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP)) || 2025-11-21 14:55:20
+[INFO] Processing pair: 1 (IR Negative Initial Return Stroke) vs 5 (KM Gradual Intra-Cloud Stroke) || 2025-11-21 14:55:20
+[INFO]   Round 1/5 for pair IR_Negative_Initial_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke || 2025-11-21 14:55:20
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:55:21
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=1 for IR_Negative_Initial_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke) || 2025-11-21 14:55:38
+[INFO]   Round 2/5 for pair IR_Negative_Initial_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke || 2025-11-21 14:55:38
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:55:39
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=2 for IR_Negative_Initial_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke) || 2025-11-21 14:55:57
+[INFO]   Round 3/5 for pair IR_Negative_Initial_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke || 2025-11-21 14:55:57
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:55:58
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=3 for IR_Negative_Initial_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke) || 2025-11-21 14:56:13
+[INFO]   Round 4/5 for pair IR_Negative_Initial_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke || 2025-11-21 14:56:13
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:56:13
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=4 for IR_Negative_Initial_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke) || 2025-11-21 14:56:36
+[INFO]   Round 5/5 for pair IR_Negative_Initial_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke || 2025-11-21 14:56:36
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:56:37
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=5 for IR_Negative_Initial_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke) || 2025-11-21 14:56:53
+[INFO] Processing pair: 1 (IR Negative Initial Return Stroke) vs 6 (O Off-record) || 2025-11-21 14:56:53
+[INFO]   Round 1/5 for pair IR_Negative_Initial_Return_Stroke-O_Off-record || 2025-11-21 14:56:53
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:56:54
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=1 for IR_Negative_Initial_Return_Stroke-O_Off-record) || 2025-11-21 14:57:08
+[INFO]   Round 2/5 for pair IR_Negative_Initial_Return_Stroke-O_Off-record || 2025-11-21 14:57:08
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:57:09
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=2 for IR_Negative_Initial_Return_Stroke-O_Off-record) || 2025-11-21 14:57:24
+[INFO]   Round 3/5 for pair IR_Negative_Initial_Return_Stroke-O_Off-record || 2025-11-21 14:57:24
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:57:25
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=3 for IR_Negative_Initial_Return_Stroke-O_Off-record) || 2025-11-21 14:57:39
+[INFO]   Round 4/5 for pair IR_Negative_Initial_Return_Stroke-O_Off-record || 2025-11-21 14:57:39
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:57:40
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=4 for IR_Negative_Initial_Return_Stroke-O_Off-record) || 2025-11-21 14:57:54
+[INFO]   Round 5/5 for pair IR_Negative_Initial_Return_Stroke-O_Off-record || 2025-11-21 14:57:54
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:57:55
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=5 for IR_Negative_Initial_Return_Stroke-O_Off-record) || 2025-11-21 14:58:10
+[INFO] Processing pair: 2 (SR Subsequent Negative Return Stroke) vs 3 (I Impulsive Event) || 2025-11-21 14:58:10
+[INFO]   Round 1/5 for pair SR_Subsequent_Negative_Return_Stroke-I_Impulsive_Event || 2025-11-21 14:58:10
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:58:11
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=1 for SR_Subsequent_Negative_Return_Stroke-I_Impulsive_Event) || 2025-11-21 14:58:31
+[INFO]   Round 2/5 for pair SR_Subsequent_Negative_Return_Stroke-I_Impulsive_Event || 2025-11-21 14:58:31
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:58:32
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=2 for SR_Subsequent_Negative_Return_Stroke-I_Impulsive_Event) || 2025-11-21 14:58:50
+[INFO]   Round 3/5 for pair SR_Subsequent_Negative_Return_Stroke-I_Impulsive_Event || 2025-11-21 14:58:50
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:58:51
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=3 for SR_Subsequent_Negative_Return_Stroke-I_Impulsive_Event) || 2025-11-21 14:59:10
+[INFO]   Round 4/5 for pair SR_Subsequent_Negative_Return_Stroke-I_Impulsive_Event || 2025-11-21 14:59:10
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:59:11
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=4 for SR_Subsequent_Negative_Return_Stroke-I_Impulsive_Event) || 2025-11-21 14:59:27
+[INFO]   Round 5/5 for pair SR_Subsequent_Negative_Return_Stroke-I_Impulsive_Event || 2025-11-21 14:59:27
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:59:27
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=5 for SR_Subsequent_Negative_Return_Stroke-I_Impulsive_Event) || 2025-11-21 14:59:44
+[INFO] Processing pair: 2 (SR Subsequent Negative Return Stroke) vs 4 (I2 Impulsive Event Pair (TIPP)) || 2025-11-21 14:59:44
+[INFO]   Round 1/5 for pair SR_Subsequent_Negative_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP) || 2025-11-21 14:59:44
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 14:59:45
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=1 for SR_Subsequent_Negative_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP)) || 2025-11-21 14:59:59
+[INFO]   Round 2/5 for pair SR_Subsequent_Negative_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP) || 2025-11-21 14:59:59
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:00:00
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=2 for SR_Subsequent_Negative_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP)) || 2025-11-21 15:00:14
+[INFO]   Round 3/5 for pair SR_Subsequent_Negative_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP) || 2025-11-21 15:00:14
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:00:15
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=3 for SR_Subsequent_Negative_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP)) || 2025-11-21 15:00:29
+[INFO]   Round 4/5 for pair SR_Subsequent_Negative_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP) || 2025-11-21 15:00:29
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:00:30
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=4 for SR_Subsequent_Negative_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP)) || 2025-11-21 15:00:46
+[INFO]   Round 5/5 for pair SR_Subsequent_Negative_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP) || 2025-11-21 15:00:46
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:00:47
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=5 for SR_Subsequent_Negative_Return_Stroke-I2_Impulsive_Event_Pair_(TIPP)) || 2025-11-21 15:01:02
+[INFO] Processing pair: 2 (SR Subsequent Negative Return Stroke) vs 5 (KM Gradual Intra-Cloud Stroke) || 2025-11-21 15:01:02
+[INFO]   Round 1/5 for pair SR_Subsequent_Negative_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke || 2025-11-21 15:01:02
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:01:03
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=1 for SR_Subsequent_Negative_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke) || 2025-11-21 15:01:22
+[INFO]   Round 2/5 for pair SR_Subsequent_Negative_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke || 2025-11-21 15:01:22
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:01:23
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=2 for SR_Subsequent_Negative_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke) || 2025-11-21 15:01:36
+[INFO]   Round 3/5 for pair SR_Subsequent_Negative_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke || 2025-11-21 15:01:36
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:01:37
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=3 for SR_Subsequent_Negative_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke) || 2025-11-21 15:01:48
+[INFO]   Round 4/5 for pair SR_Subsequent_Negative_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke || 2025-11-21 15:01:48
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:01:49
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=4 for SR_Subsequent_Negative_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke) || 2025-11-21 15:02:03
+[INFO]   Round 5/5 for pair SR_Subsequent_Negative_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke || 2025-11-21 15:02:03
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:02:04
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=5 for SR_Subsequent_Negative_Return_Stroke-KM_Gradual_Intra-Cloud_Stroke) || 2025-11-21 15:02:16
+[INFO] Processing pair: 2 (SR Subsequent Negative Return Stroke) vs 6 (O Off-record) || 2025-11-21 15:02:16
+[INFO]   Round 1/5 for pair SR_Subsequent_Negative_Return_Stroke-O_Off-record || 2025-11-21 15:02:16
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:02:16
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=1 for SR_Subsequent_Negative_Return_Stroke-O_Off-record) || 2025-11-21 15:02:31
+[INFO]   Round 2/5 for pair SR_Subsequent_Negative_Return_Stroke-O_Off-record || 2025-11-21 15:02:31
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:02:32
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=2 for SR_Subsequent_Negative_Return_Stroke-O_Off-record) || 2025-11-21 15:02:52
+[INFO]   Round 3/5 for pair SR_Subsequent_Negative_Return_Stroke-O_Off-record || 2025-11-21 15:02:52
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:02:52
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=3 for SR_Subsequent_Negative_Return_Stroke-O_Off-record) || 2025-11-21 15:03:08
+[INFO]   Round 4/5 for pair SR_Subsequent_Negative_Return_Stroke-O_Off-record || 2025-11-21 15:03:08
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:03:08
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=4 for SR_Subsequent_Negative_Return_Stroke-O_Off-record) || 2025-11-21 15:03:25
+[INFO]   Round 5/5 for pair SR_Subsequent_Negative_Return_Stroke-O_Off-record || 2025-11-21 15:03:25
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:03:26
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=5 for SR_Subsequent_Negative_Return_Stroke-O_Off-record) || 2025-11-21 15:03:42
+[INFO] Processing pair: 3 (I Impulsive Event) vs 4 (I2 Impulsive Event Pair (TIPP)) || 2025-11-21 15:03:42
+[INFO]   Round 1/5 for pair I_Impulsive_Event-I2_Impulsive_Event_Pair_(TIPP) || 2025-11-21 15:03:42
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:03:43
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=1 for I_Impulsive_Event-I2_Impulsive_Event_Pair_(TIPP)) || 2025-11-21 15:04:10
+[INFO]   Round 2/5 for pair I_Impulsive_Event-I2_Impulsive_Event_Pair_(TIPP) || 2025-11-21 15:04:10
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:04:10
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=2 for I_Impulsive_Event-I2_Impulsive_Event_Pair_(TIPP)) || 2025-11-21 15:04:35
+[INFO]   Round 3/5 for pair I_Impulsive_Event-I2_Impulsive_Event_Pair_(TIPP) || 2025-11-21 15:04:35
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:04:36
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=3 for I_Impulsive_Event-I2_Impulsive_Event_Pair_(TIPP)) || 2025-11-21 15:05:03
+[INFO]   Round 4/5 for pair I_Impulsive_Event-I2_Impulsive_Event_Pair_(TIPP) || 2025-11-21 15:05:03
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:05:04
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=4 for I_Impulsive_Event-I2_Impulsive_Event_Pair_(TIPP)) || 2025-11-21 15:05:24
+[INFO]   Round 5/5 for pair I_Impulsive_Event-I2_Impulsive_Event_Pair_(TIPP) || 2025-11-21 15:05:24
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:05:24
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=5 for I_Impulsive_Event-I2_Impulsive_Event_Pair_(TIPP)) || 2025-11-21 15:05:44
+[INFO] Processing pair: 3 (I Impulsive Event) vs 5 (KM Gradual Intra-Cloud Stroke) || 2025-11-21 15:05:44
+[INFO]   Round 1/5 for pair I_Impulsive_Event-KM_Gradual_Intra-Cloud_Stroke || 2025-11-21 15:05:44
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:05:44
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=1 for I_Impulsive_Event-KM_Gradual_Intra-Cloud_Stroke) || 2025-11-21 15:06:03
+[INFO]   Round 2/5 for pair I_Impulsive_Event-KM_Gradual_Intra-Cloud_Stroke || 2025-11-21 15:06:03
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:06:04
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=2 for I_Impulsive_Event-KM_Gradual_Intra-Cloud_Stroke) || 2025-11-21 15:06:24
+[INFO]   Round 3/5 for pair I_Impulsive_Event-KM_Gradual_Intra-Cloud_Stroke || 2025-11-21 15:06:24
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:06:24
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=3 for I_Impulsive_Event-KM_Gradual_Intra-Cloud_Stroke) || 2025-11-21 15:06:43
+[INFO]   Round 4/5 for pair I_Impulsive_Event-KM_Gradual_Intra-Cloud_Stroke || 2025-11-21 15:06:43
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:06:44
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=4 for I_Impulsive_Event-KM_Gradual_Intra-Cloud_Stroke) || 2025-11-21 15:07:01
+[INFO]   Round 5/5 for pair I_Impulsive_Event-KM_Gradual_Intra-Cloud_Stroke || 2025-11-21 15:07:01
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:07:02
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=5 for I_Impulsive_Event-KM_Gradual_Intra-Cloud_Stroke) || 2025-11-21 15:07:20
+[INFO] Processing pair: 3 (I Impulsive Event) vs 6 (O Off-record) || 2025-11-21 15:07:20
+[INFO]   Round 1/5 for pair I_Impulsive_Event-O_Off-record || 2025-11-21 15:07:20
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:07:21
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=1 for I_Impulsive_Event-O_Off-record) || 2025-11-21 15:07:43
+[INFO]   Round 2/5 for pair I_Impulsive_Event-O_Off-record || 2025-11-21 15:07:43
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:07:43
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=2 for I_Impulsive_Event-O_Off-record) || 2025-11-21 15:08:00
+[INFO]   Round 3/5 for pair I_Impulsive_Event-O_Off-record || 2025-11-21 15:08:00
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:08:00
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=3 for I_Impulsive_Event-O_Off-record) || 2025-11-21 15:08:25
+[INFO]   Round 4/5 for pair I_Impulsive_Event-O_Off-record || 2025-11-21 15:08:25
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:08:26
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=4 for I_Impulsive_Event-O_Off-record) || 2025-11-21 15:09:04
+[INFO]   Round 5/5 for pair I_Impulsive_Event-O_Off-record || 2025-11-21 15:09:04
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:09:05
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=5 for I_Impulsive_Event-O_Off-record) || 2025-11-21 15:09:20
+[INFO] Processing pair: 4 (I2 Impulsive Event Pair (TIPP)) vs 5 (KM Gradual Intra-Cloud Stroke) || 2025-11-21 15:09:20
+[INFO]   Round 1/5 for pair I2_Impulsive_Event_Pair_(TIPP)-KM_Gradual_Intra-Cloud_Stroke || 2025-11-21 15:09:20
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:09:20
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=1 for I2_Impulsive_Event_Pair_(TIPP)-KM_Gradual_Intra-Cloud_Stroke) || 2025-11-21 15:09:48
+[INFO]   Round 2/5 for pair I2_Impulsive_Event_Pair_(TIPP)-KM_Gradual_Intra-Cloud_Stroke || 2025-11-21 15:09:48
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:09:49
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=2 for I2_Impulsive_Event_Pair_(TIPP)-KM_Gradual_Intra-Cloud_Stroke) || 2025-11-21 15:10:16
+[INFO]   Round 3/5 for pair I2_Impulsive_Event_Pair_(TIPP)-KM_Gradual_Intra-Cloud_Stroke || 2025-11-21 15:10:16
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:10:16
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=3 for I2_Impulsive_Event_Pair_(TIPP)-KM_Gradual_Intra-Cloud_Stroke) || 2025-11-21 15:10:33
+[INFO]   Round 4/5 for pair I2_Impulsive_Event_Pair_(TIPP)-KM_Gradual_Intra-Cloud_Stroke || 2025-11-21 15:10:33
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:10:33
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=4 for I2_Impulsive_Event_Pair_(TIPP)-KM_Gradual_Intra-Cloud_Stroke) || 2025-11-21 15:10:53
+[INFO]   Round 5/5 for pair I2_Impulsive_Event_Pair_(TIPP)-KM_Gradual_Intra-Cloud_Stroke || 2025-11-21 15:10:53
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:10:54
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=5 for I2_Impulsive_Event_Pair_(TIPP)-KM_Gradual_Intra-Cloud_Stroke) || 2025-11-21 15:11:06
+[INFO] Processing pair: 4 (I2 Impulsive Event Pair (TIPP)) vs 6 (O Off-record) || 2025-11-21 15:11:06
+[INFO]   Round 1/5 for pair I2_Impulsive_Event_Pair_(TIPP)-O_Off-record || 2025-11-21 15:11:06
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:11:07
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=1 for I2_Impulsive_Event_Pair_(TIPP)-O_Off-record) || 2025-11-21 15:11:28
+[INFO]   Round 2/5 for pair I2_Impulsive_Event_Pair_(TIPP)-O_Off-record || 2025-11-21 15:11:28
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:11:29
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=2 for I2_Impulsive_Event_Pair_(TIPP)-O_Off-record) || 2025-11-21 15:11:44
+[INFO]   Round 3/5 for pair I2_Impulsive_Event_Pair_(TIPP)-O_Off-record || 2025-11-21 15:11:44
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:11:45
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=3 for I2_Impulsive_Event_Pair_(TIPP)-O_Off-record) || 2025-11-21 15:11:58
+[INFO]   Round 4/5 for pair I2_Impulsive_Event_Pair_(TIPP)-O_Off-record || 2025-11-21 15:11:58
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:11:59
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=4 for I2_Impulsive_Event_Pair_(TIPP)-O_Off-record) || 2025-11-21 15:12:18
+[INFO]   Round 5/5 for pair I2_Impulsive_Event_Pair_(TIPP)-O_Off-record || 2025-11-21 15:12:18
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:12:18
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=5 for I2_Impulsive_Event_Pair_(TIPP)-O_Off-record) || 2025-11-21 15:12:37
+[INFO] Processing pair: 5 (KM Gradual Intra-Cloud Stroke) vs 6 (O Off-record) || 2025-11-21 15:12:37
+[INFO]   Round 1/5 for pair KM_Gradual_Intra-Cloud_Stroke-O_Off-record || 2025-11-21 15:12:37
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:12:38
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=1 for KM_Gradual_Intra-Cloud_Stroke-O_Off-record) || 2025-11-21 15:12:54
+[INFO]   Round 2/5 for pair KM_Gradual_Intra-Cloud_Stroke-O_Off-record || 2025-11-21 15:12:54
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:12:55
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=2 for KM_Gradual_Intra-Cloud_Stroke-O_Off-record) || 2025-11-21 15:13:04
+[INFO]   Round 3/5 for pair KM_Gradual_Intra-Cloud_Stroke-O_Off-record || 2025-11-21 15:13:04
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:13:05
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=3 for KM_Gradual_Intra-Cloud_Stroke-O_Off-record) || 2025-11-21 15:13:19
+[INFO]   Round 4/5 for pair KM_Gradual_Intra-Cloud_Stroke-O_Off-record || 2025-11-21 15:13:19
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:13:20
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=4 for KM_Gradual_Intra-Cloud_Stroke-O_Off-record) || 2025-11-21 15:13:38
+[INFO]   Round 5/5 for pair KM_Gradual_Intra-Cloud_Stroke-O_Off-record || 2025-11-21 15:13:38
+[INFO]   Sending contrastive prompt to model... || 2025-11-21 15:13:39
+[INFO]   Intermediate save → ./data/features/tee/10-imgs_5-rounds_contrastive.json (len=5 for KM_Gradual_Intra-Cloud_Stroke-O_Off-record) || 2025-11-21 15:13:59
+[INFO] Saving final contrastive summaries to JSON... || 2025-11-21 15:13:59
+[INFO] ✅ Finished. Results saved → ./data/features/tee/10-imgs_5-rounds_contrastive.json || 2025-11-21 15:13:59

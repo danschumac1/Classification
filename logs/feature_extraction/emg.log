@@ -1,0 +1,18 @@
+
+========================================
+Master Log Session at 2025-11-20 16:51:13
+========================================
+[INFO] Clearing output file ./data/features/emg/simple.jsonl || 2025-11-20 16:51:13
+[INFO] Loaded dataset: emg || 2025-11-20 16:51:13
+[INFO] Train size=63 || 2025-11-20 16:51:13
+[INFO] Output file: ./data/features/emg/simple.jsonl || 2025-11-20 16:51:13
+[INFO] Batch rows: 0 → 20 || 2025-11-20 16:51:13
+[INFO] Saved prompt markdown to: ./data/features/emg/prompt_examples/simple.md || 2025-11-20 16:51:14
+[INFO] Sending 20 train prompts to model... || 2025-11-20 16:51:14
+[INFO] Batch rows: 20 → 40 || 2025-11-20 16:51:39
+[INFO] Sending 20 train prompts to model... || 2025-11-20 16:51:40
+[INFO] Batch rows: 40 → 60 || 2025-11-20 16:52:01
+[INFO] Sending 20 train prompts to model... || 2025-11-20 16:52:03
+[INFO] Batch rows: 60 → 63 || 2025-11-20 16:52:26
+[INFO] Sending 3 train prompts to model... || 2025-11-20 16:52:26
+[INFO] ✅ Finished. Results saved → ./data/features/emg/simple.jsonl || 2025-11-20 16:52:42

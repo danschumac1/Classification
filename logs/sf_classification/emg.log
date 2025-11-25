@@ -1,0 +1,10 @@
+
+========================================
+Master Log Session at 2025-11-20 17:01:46
+========================================
+[INFO] Loaded 63 feature rows from ./data/features/emg/simple.jsonl || 2025-11-20 17:01:46
+[INFO] Loaded 63 train feature strings. || 2025-11-20 17:01:46
+[INFO] Embedding TRAIN texts using model: text-embedding-3-small || 2025-11-20 17:01:46
+[INFO] Generating descriptions with API... || 2025-11-20 17:01:47
+[INFO] Embedding test descriptions... || 2025-11-20 17:02:27
+[INFO] Similarity-based accuracy (k=5): 80.00% || 2025-11-20 17:02:27

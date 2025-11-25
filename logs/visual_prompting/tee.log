@@ -1,0 +1,30 @@
+
+========================================
+Master Log Session at 2025-11-20 12:13:22
+========================================
+[INFO] Clearing output file ./data/sample_generations/tee/visual_prompting/line-auto-no_ts-raw-3_shot.jsonl || 2025-11-20 12:13:22
+[INFO] Loaded dataset: tee || 2025-11-20 12:13:22
+[INFO] Train size=35, Test size=30 || 2025-11-20 12:13:22
+[INFO] Output file: ./data/sample_generations/tee/visual_prompting/line-auto-no_ts-raw-3_shot.jsonl || 2025-11-20 12:13:22
+[INFO] Generating reasoning for 21 few-shot examples... || 2025-11-20 12:13:22
+[INFO] Model = gpt-4o-mini || 2025-11-20 12:13:41
+[INFO] Batch rows: 0 → 5 || 2025-11-20 12:13:41
+[INFO] Saved prompt markdown to: ./data/sample_generations/tee/visual_prompting/prompt_examples/line-auto-no_ts-raw-3_shot.md || 2025-11-20 12:13:41
+[INFO] Sending 5 test prompts to model... || 2025-11-20 12:13:41
+[INFO] Current accuracy at idx 4:			60.00% || 2025-11-20 12:14:11
+[INFO] Batch rows: 5 → 10 || 2025-11-20 12:14:11
+[INFO] Sending 5 test prompts to model... || 2025-11-20 12:14:11
+[INFO] Current accuracy at idx 9:			50.00% || 2025-11-20 12:14:46
+[INFO] Batch rows: 10 → 15 || 2025-11-20 12:14:46
+[INFO] Sending 5 test prompts to model... || 2025-11-20 12:14:46
+[INFO] Current accuracy at idx 14:			46.67% || 2025-11-20 12:15:19
+[INFO] Batch rows: 15 → 20 || 2025-11-20 12:15:19
+[INFO] Sending 5 test prompts to model... || 2025-11-20 12:15:19
+[INFO] Current accuracy at idx 19:			35.00% || 2025-11-20 12:15:44
+[INFO] Batch rows: 20 → 25 || 2025-11-20 12:15:44
+[INFO] Sending 5 test prompts to model... || 2025-11-20 12:15:44
+[INFO] Current accuracy at idx 24:			36.00% || 2025-11-20 12:16:17
+[INFO] Batch rows: 25 → 30 || 2025-11-20 12:16:17
+[INFO] Sending 5 test prompts to model... || 2025-11-20 12:16:17
+[INFO] Current accuracy at idx 29:			33.33% || 2025-11-20 12:16:59
+[INFO] ✅ Finished. Results saved → ./data/sample_generations/tee/visual_prompting/line-auto-no_ts-raw-3_shot.jsonl || 2025-11-20 12:16:59
