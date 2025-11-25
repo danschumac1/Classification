@@ -1,5 +1,18 @@
-./data
+# Ignore entire data folder, but keep placeholder
+/data/*
+!/data/.gitkeep
+
+# Environment files
 .env
 *.env
-__pycache__
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Scratch scripts
 _scratch_pad.py
+
+# Virtual environments (optional)
+venv/
+.venv/
