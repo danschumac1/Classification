@@ -135,3 +135,17 @@ def build_question_text(subset_key: str) -> str:
     options_lines = [f"[{_letters(i+1)}] {opt}" for i, opt in enumerate(label_texts)]
     options_block = "Your options are:\n\t" + "\n\t".join(options_lines)
     return f"{task} {options_block}" if task else options_block
+
+
+def  get_dim_names(dataset: str) -> list[str]:
+    """
+    Use LEGEND_MAPPINGS if available; otherwise fall back to dim_0, dim_1, ...
+    Slugify names so they're safe as JSON keys (no spaces/hyphens).
+    """
+    legends = LEGEND_MAPPINGS.get(dataset.upper())
+    if legends is None:
+        legends=["time_series"]
+    elif len(legends) == 1 or legends is None:
+        legends = ["time_series"]
+
+    return legends

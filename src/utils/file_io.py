@@ -12,7 +12,7 @@ def append_jsonl(output_path: str, data: dict):
     output_file = output_path
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     
-    with open(output_file, 'a') as f:
+    with open(output_path, "a", encoding="utf-8") as f:
         json.dump(data, f)
         f.write('\n')
     

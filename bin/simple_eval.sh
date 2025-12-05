@@ -31,7 +31,12 @@ PATHS=(
     #  "./data/sample_generations/har/contrastive_classification/cf.jsonl"
     # "./data/sample_generations/ctu/contrastive_classification/cf.jsonl"
     # "./data/sample_generations/tee/contrastive_classification/cf.jsonl"
-    "./data/sample_generations/emg/contrastive_classification/cf.jsonl"
+    # "./data/sample_generations/emg/contrastive_classification/cf.jsonl"
+
+    # "./data/sample_generations/har/fewshot_mm/fewshot_mm.jsonl"
+    # "./data/sample_generations/emg/fewshot_mm/fewshot_mm.jsonl"
+    "./data/sample_generations/tee/fewshot_mm/fewshot_mm.jsonl"
+    # "./data/sample_generations/ctu/fewshot_mm/fewshot_mm.jsonl"
 
 
 )

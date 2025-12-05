@@ -1,34 +1,0 @@
-nohup: ignoring input
-
-========================================
-Master Log Session at 2025-11-21 14:47:44
-========================================
-
-[INFO] Loaded dataset: ctu || 2025-11-21 14:47:44
-[INFO] Test size=100 || 2025-11-21 14:47:44
-[INFO] Processing dataset: ctu || 2025-11-21 14:47:44
-[INFO] Unique classes in the dataset: ['Desktop', 'Laptop'] || 2025-11-21 14:47:44
-[INFO] Constructed contrastive summary dictionary. || 2025-11-21 14:47:44
-[INFO] Contrastive dict keys: ['Desktop', 'Laptop'] || 2025-11-21 14:47:44
-Summarizing classes:   0%|          | 0/2 [00:00<?, ?it/s]Summarizing classes:  50%|█████     | 1/2 [00:14<00:14, 14.17s/it]Summarizing classes: 100%|██████████| 2/2 [00:25<00:00, 12.56s/it]Summarizing classes: 100%|██████████| 2/2 [00:25<00:00, 12.80s/it]
-[INFO] Saved example class-summary prompt markdown to: ./data/sample_generations/ctu/contrastive_generation/prompt_examples/ctu_class_summary_prompt_example.md || 2025-11-21 14:47:44
-[INFO] Saving final class-level summaries to JSON... || 2025-11-21 14:48:10
-[INFO] ✅ Finished. Results saved → ./data/sample_generations/ctu/contrastive_generation//final_summaries.json || 2025-11-21 14:48:10
-
-========================================
-Master Log Session at 2025-11-21 14:48:10
-========================================
-
-[INFO] Loaded dataset: emg || 2025-11-21 14:48:10
-[INFO] Test size=15 || 2025-11-21 14:48:10
-[INFO] Processing dataset: emg || 2025-11-21 14:48:10
-[INFO] Unique classes in the dataset: ['Healthy (normal)', 'Myopathy', 'Neuropathy'] || 2025-11-21 14:48:10
-[INFO] Constructed contrastive summary dictionary. || 2025-11-21 14:48:10
-[INFO] Contrastive dict keys: ['Healthy (normal)', 'Myopathy', 'Neuropathy'] || 2025-11-21 14:48:10
-Summarizing classes:   0%|          | 0/3 [00:00<?, ?it/s]Summarizing classes:  33%|███▎      | 1/3 [00:08<00:17,  8.88s/it]Summarizing classes:  67%|██████▋   | 2/3 [00:28<00:15, 15.32s/it]Summarizing classes: 100%|██████████| 3/3 [00:43<00:00, 15.18s/it]Summarizing classes: 100%|██████████| 3/3 [00:43<00:00, 14.57s/it]
-[INFO] Saved example class-summary prompt markdown to: ./data/sample_generations/emg/contrastive_generation/prompt_examples/emg_class_summary_prompt_example.md || 2025-11-21 14:48:10
-[INFO] Saving final class-level summaries to JSON... || 2025-11-21 14:48:54
-[INFO] ✅ Finished. Results saved → ./data/sample_generations/emg/contrastive_generation//final_summaries.json || 2025-11-21 14:48:54
-./bin/c_pipeline.sh: line 16: /emg/10-imgs_5-rounds_contrastive.json: No such file or directory
-./bin/c_pipeline.sh: line 17: syntax error near unexpected token `done'
-./bin/c_pipeline.sh: line 17: `done'

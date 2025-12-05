@@ -614,7 +614,10 @@ class ImagePrompter:
             return "".join(ch if ch.isalnum() or ch in "-_" else "_" for ch in s)
 
         # This ensures the system message is in messages[0]
-        messages = self.format_prompt(examples, query)
+        if examples:
+            messages = self.format_prompt(examples, query)
+        else:
+            messages = self.format_prompt([], query)    
         os.makedirs(os.path.dirname(out_md_path), exist_ok=True)
 
         # Optionally create an images folder next to the MD file
@@ -774,160 +777,160 @@ if __name__ == "__main__":
     prompter.model_name = "gpt-4o-mini"  # set your target model here
     prompter.system_prompt = system_prompt_text
 
-    # # -------------------------------------------------------------------------
-    # # TEST 1 — Prompt creation & truncated string representation
-    # # -------------------------------------------------------------------------
-    # print("\n=== TEST 1: Prompt creation with image ===")
-    # example_cat = Prompt(
-    #     user={"question": default_question, "context": default_context},
-    #     img_path="./demo/images/ex1.jpg",
-    #     assistant={"answer": "Cat"},
-    # )
-    # print(example_cat)
+    # -------------------------------------------------------------------------
+    # TEST 1 — Prompt creation & truncated string representation
+    # -------------------------------------------------------------------------
+    print("\n=== TEST 1: Prompt creation with image ===")
+    example_cat = Prompt(
+        user={"question": default_question, "context": default_context},
+        img_path="./demo/images/ex1.jpg",
+        assistant={"answer": "Cat"},
+    )
+    print(example_cat)
 
-    # print("\n=== TEST 1B: Prompt creation with a different image ===")
-    # example_axolotl = Prompt(
-    #     user={"question": default_question, "context": default_context},
-    #     img_path="./demo/images/query.jpg",
-    # )
-    # print(example_axolotl)
+    print("\n=== TEST 1B: Prompt creation with a different image ===")
+    example_axolotl = Prompt(
+        user={"question": default_question, "context": default_context},
+        img_path="./demo/images/query.jpg",
+    )
+    print(example_axolotl)
 
-    # # -------------------------------------------------------------------------
-    # # TEST 2 — Verify base64 truncation happened
-    # # -------------------------------------------------------------------------
-    # print("\n=== TEST 2: Base64 truncation check ===")
-    # assert "..." in str(example_cat), "Base64 truncation did not occur."
-    # assert "base64," in str(example_cat), "Data URL missing."
-    # print("Truncation verified.")
+    # -------------------------------------------------------------------------
+    # TEST 2 — Verify base64 truncation happened
+    # -------------------------------------------------------------------------
+    print("\n=== TEST 2: Base64 truncation check ===")
+    assert "..." in str(example_cat), "Base64 truncation did not occur."
+    assert "base64," in str(example_cat), "Data URL missing."
+    print("Truncation verified.")
 
-    # # -------------------------------------------------------------------------
-    # # TEST 3 — format_prompt correctness
-    # # -------------------------------------------------------------------------
-    # print("\n=== TEST 3: format_prompt output shape ===")
-    # fewshot_messages = prompter.format_prompt([example_cat], example_axolotl)
+    # -------------------------------------------------------------------------
+    # TEST 3 — format_prompt correctness
+    # -------------------------------------------------------------------------
+    print("\n=== TEST 3: format_prompt output shape ===")
+    fewshot_messages = prompter.format_prompt([example_cat], example_axolotl)
 
-    # assert isinstance(fewshot_messages, list), "format_prompt must return List[dict]"
-    # assert isinstance(fewshot_messages[0], dict) and fewshot_messages[0].get("role") == "system", (
-    #     "First message must be a system role message"
-    # )
-    # print("format_prompt returned a valid prompt structure.")
+    assert isinstance(fewshot_messages, list), "format_prompt must return List[dict]"
+    assert isinstance(fewshot_messages[0], dict) and fewshot_messages[0].get("role") == "system", (
+        "First message must be a system role message"
+    )
+    print("format_prompt returned a valid prompt structure.")
 
-    # # -------------------------------------------------------------------------
-    # # TEST 3B — Zero-shot prompt formatting (no examples)
-    # # -------------------------------------------------------------------------
-    # print("\n=== TEST 3B: Zero-shot prompt format ===")
-    # zero_shot_messages = prompter.format_prompt([], example_axolotl)
+    # -------------------------------------------------------------------------
+    # TEST 3B — Zero-shot prompt formatting (no examples)
+    # -------------------------------------------------------------------------
+    print("\n=== TEST 3B: Zero-shot prompt format ===")
+    zero_shot_messages = prompter.format_prompt([], example_axolotl)
 
-    # assert isinstance(zero_shot_messages, list), "Zero-shot prompt must be a list"
-    # assert zero_shot_messages[0].get("role") == "system", "Zero-shot first message must be system"
-    # assert zero_shot_messages[-1].get("role") == "user", "Zero-shot last message must be user"
-    # assert isinstance(zero_shot_messages[-1]["content"], list), "User content must be a multimodal list"
+    assert isinstance(zero_shot_messages, list), "Zero-shot prompt must be a list"
+    assert zero_shot_messages[0].get("role") == "system", "Zero-shot first message must be system"
+    assert zero_shot_messages[-1].get("role") == "user", "Zero-shot last message must be user"
+    assert isinstance(zero_shot_messages[-1]["content"], list), "User content must be a multimodal list"
 
-    # print("Zero-shot formatting verified.")
-    # zero_shot_result = prompter.get_completion(zero_shot_messages)
-    # print(zero_shot_result)
+    print("Zero-shot formatting verified.")
+    zero_shot_result = prompter.get_completion(zero_shot_messages)
+    print(zero_shot_result)
 
-    # # -------------------------------------------------------------------------
-    # # TEST 3C — Prompt with no images should still work
-    # # -------------------------------------------------------------------------
-    # print("\n=== TEST 3C: Prompt without image ===")
-    # text_only_query = Prompt(
-    #     user={"question": "What is 2 + 2?", "context": "Simple math question."}
-    #     # No image attached
-    # )
+    # -------------------------------------------------------------------------
+    # TEST 3C — Prompt with no images should still work
+    # -------------------------------------------------------------------------
+    print("\n=== TEST 3C: Prompt without image ===")
+    text_only_query = Prompt(
+        user={"question": "What is 2 + 2?", "context": "Simple math question."}
+        # No image attached
+    )
 
-    # text_only_messages = prompter.format_prompt([], text_only_query)
-    # text_only_result = prompter.get_completion(text_only_messages)
-    # print(text_only_result)
+    text_only_messages = prompter.format_prompt([], text_only_query)
+    text_only_result = prompter.get_completion(text_only_messages)
+    print(text_only_result)
 
-    # # Validate structure
-    # assert text_only_messages[-1]["role"] == "user", "Text-only prompt must end with user message"
-    # assert all(
-    #     block.get("type") == "text" for block in text_only_messages[-1]["content"]
-    # ), "Text-only prompt must not contain image blocks"
-    # print("No-image formatting verified.")
+    # Validate structure
+    assert text_only_messages[-1]["role"] == "user", "Text-only prompt must end with user message"
+    assert all(
+        block.get("type") == "text" for block in text_only_messages[-1]["content"]
+    ), "Text-only prompt must not contain image blocks"
+    print("No-image formatting verified.")
 
-    # # -------------------------------------------------------------------------
-    # # TEST 4 — Single completion (cat example explaining axolotl)
-    # # -------------------------------------------------------------------------
-    # print("\n=== TEST 4: Single completion call ===")
-    # single_reply = prompter.get_completion(fewshot_messages)
-    # print("LLM:", single_reply)
+    # -------------------------------------------------------------------------
+    # TEST 4 — Single completion (cat example explaining axolotl)
+    # -------------------------------------------------------------------------
+    print("\n=== TEST 4: Single completion call ===")
+    single_reply = prompter.get_completion(fewshot_messages)
+    print("LLM:", single_reply)
 
-    # # -------------------------------------------------------------------------
-    # # TEST 5 — Batch completion with cat, dog, lion queries
-    # # -------------------------------------------------------------------------
-    # print("\n=== TEST 5: Batch completion with 3 images ===")
-    # example_dog = Prompt(
-    #     user={"question": default_question, "context": default_context},
-    #     img_path="./demo/images/ex2.jpg",
-    # )
-    # example_lion = Prompt(
-    #     user={"question": default_question, "context": default_context},
-    #     img_path="./demo/images/ex3.jpg",
-    # )
+    # -------------------------------------------------------------------------
+    # TEST 5 — Batch completion with cat, dog, lion queries
+    # -------------------------------------------------------------------------
+    print("\n=== TEST 5: Batch completion with 3 images ===")
+    example_dog = Prompt(
+        user={"question": default_question, "context": default_context},
+        img_path="./demo/images/ex2.jpg",
+    )
+    example_lion = Prompt(
+        user={"question": default_question, "context": default_context},
+        img_path="./demo/images/ex3.jpg",
+    )
 
-    # # Build three independent prompts for the batch
-    # batch_requests: List[List[Dict[str, Any]]] = [
-    #     prompter.format_prompt([example_cat], example_axolotl),  # cat → axolotl
-    #     prompter.format_prompt([example_cat], example_dog),      # cat → dog
-    #     prompter.format_prompt([example_cat], example_lion),     # cat → lion
-    # ]
+    # Build three independent prompts for the batch
+    batch_requests: List[List[Dict[str, Any]]] = [
+        prompter.format_prompt([example_cat], example_axolotl),  # cat → axolotl
+        prompter.format_prompt([example_cat], example_dog),      # cat → dog
+        prompter.format_prompt([example_cat], example_lion),     # cat → lion
+    ]
 
-    # batch_results = prompter.get_completion(batch_requests)
-    # print("\nBatch results:")
-    # assert isinstance(batch_results, list), "Expected list of results for batch mode."
-    # for i, result in enumerate(batch_results):
-    #     print(f"{i}: {result}")
+    batch_results = prompter.get_completion(batch_requests)
+    print("\nBatch results:")
+    assert isinstance(batch_results, list), "Expected list of results for batch mode."
+    for i, result in enumerate(batch_results):
+        print(f"{i}: {result}")
 
-    # assert len(batch_results) == 3, "Batch size mismatch."
-    # print("\nBatch execution verified.")
+    assert len(batch_results) == 3, "Batch size mismatch."
+    print("\nBatch execution verified.")
 
-    # # -------------------------------------------------------------------------
-    # # TEST 6 — Order preservation under threading
-    # # -------------------------------------------------------------------------
-    # print("\n=== TEST 6: Thread ordering ===")
-    # for idx, item in enumerate(batch_results):
-    #     assert isinstance(item, dict), f"Unexpected output type at index {idx}"
-    # print("Threaded order preserved.")
+    # -------------------------------------------------------------------------
+    # TEST 6 — Order preservation under threading
+    # -------------------------------------------------------------------------
+    print("\n=== TEST 6: Thread ordering ===")
+    for idx, item in enumerate(batch_results):
+        assert isinstance(item, dict), f"Unexpected output type at index {idx}"
+    print("Threaded order preserved.")
 
-    # print("\nAll tests completed successfully.")
+    print("\nAll tests completed successfully.")
 
 
-    # out_path = prompter.export_prompt_markdown(
-    #     examples=[example_cat],          # or more: [example_cat, example_dog, ...]
-    #     query=example_axolotl,           # whatever your current query Prompt is
-    #     out_md_path="./prompt_export.md",
-    #     save_images=False,                # set False to keep data URLs inline
-    #     images_dirname="./"          # folder next to the .md
-    # )
-    # print(f"Markdown exported to: {out_path}")
-    # # -------------------------------------------------------------------------
-    # # TEST 7 — Batch completion with zero-shot prompts
-    # # -------------------------------------------------------------------------
-    # print("\n=== TEST 7: Batch zero-shot completion ===")
+    out_path = prompter.export_prompt_markdown(
+        examples=[example_cat],          # or more: [example_cat, example_dog, ...]
+        query=example_axolotl,           # whatever your current query Prompt is
+        out_md_path="./prompt_export.md",
+        save_images=False,                # set False to keep data URLs inline
+        images_dirname="./"          # folder next to the .md
+    )
+    print(f"Markdown exported to: {out_path}")
+    # -------------------------------------------------------------------------
+    # TEST 7 — Batch completion with zero-shot prompts
+    # -------------------------------------------------------------------------
+    print("\n=== TEST 7: Batch zero-shot completion ===")
 
-    # # Reuse our existing prompts, but now with NO few-shot examples.
-    # zero_shot_batch_requests: List[List[Dict[str, Any]]] = [
-    #     prompter.format_prompt([], example_axolotl),  # zero-shot axolotl
-    #     prompter.format_prompt([], example_dog),      # zero-shot dog
-    #     prompter.format_prompt([], example_lion),     # zero-shot lion
-    # ]
+    # Reuse our existing prompts, but now with NO few-shot examples.
+    zero_shot_batch_requests: List[List[Dict[str, Any]]] = [
+        prompter.format_prompt([], example_axolotl),  # zero-shot axolotl
+        prompter.format_prompt([], example_dog),      # zero-shot dog
+        prompter.format_prompt([], example_lion),     # zero-shot lion
+    ]
 
-    # zero_shot_batch_results = prompter.get_completion(zero_shot_batch_requests)
+    zero_shot_batch_results = prompter.get_completion(zero_shot_batch_requests)
 
-    # print("\nZero-shot batch results:")
-    # assert isinstance(
-    #     zero_shot_batch_results, list
-    # ), "Expected list of results for zero-shot batch mode."
-    # assert (
-    #     len(zero_shot_batch_results) == len(zero_shot_batch_requests)
-    # ), "Zero-shot batch size mismatch."
+    print("\nZero-shot batch results:")
+    assert isinstance(
+        zero_shot_batch_results, list
+    ), "Expected list of results for zero-shot batch mode."
+    assert (
+        len(zero_shot_batch_results) == len(zero_shot_batch_requests)
+    ), "Zero-shot batch size mismatch."
 
-    # for i, result in enumerate(zero_shot_batch_results):
-    #     print(f"Zero-shot {i}: {result}")
+    for i, result in enumerate(zero_shot_batch_results):
+        print(f"Zero-shot {i}: {result}")
 
-    # print("\nZero-shot batch execution verified.")
+    print("\nZero-shot batch execution verified.")
 
     print("\n=== TEST 8: Grouped layout with multiple images ===")
 
@@ -969,3 +972,20 @@ if __name__ == "__main__":
     grouped_result = prompter.get_completion(grouped_messages)
     print("\nGrouped layout result:")
     print(grouped_result)
+
+    # -------------------------------------------------------------------------
+    # TEST 9 — Export prompt with no examples
+    print("\n=== TEST 9: Export zero-shot prompt to Markdown ===")
+    zero_shot_query = Prompt(
+        user={"question": default_question, "context": default_context},
+        img_path="./demo/images/query.jpg",
+    )
+    zero_shot_md_path = "./prompt_exports/test9_zero_shot.md"
+    zero_shot_md_abs = prompter.export_prompt_markdown(
+        examples=[],  # no few-shot examples
+        query=zero_shot_query,
+        out_md_path=zero_shot_md_path,
+        save_images=True,
+        images_dirname="images",
+    )
+    print(f"TEST 9 zero-shot prompt exported to: {zero_shot_md_abs}")   

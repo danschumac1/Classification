@@ -150,3 +150,12 @@ class MasterLogger:
     def get_instance() -> 'MasterLogger':
         assert MasterLogger._instance is not None, "Logger not initialized."
         return MasterLogger._instance
+
+def setup_logger(log_path: str, print_to_console: bool):
+    logger = MasterLogger(
+        log_path=log_path,
+        init=True,
+        clear=True,
+        print_to_console=print_to_console,
+    )
+    return logger
