@@ -1,146 +1,0 @@
-Debator-Judge eval:   0%|          | 0/100 [00:00<?, ?it/s]Debator-Judge eval:   1%|          | 1/100 [00:31<51:11, 31.02s/it]Debator-Judge eval:   2%|▏         | 2/100 [01:15<1:03:07, 38.65s/it]Debator-Judge eval:   3%|▎         | 3/100 [02:03<1:09:25, 42.94s/it]Debator-Judge eval:   5%|▌         | 5/100 [02:44<48:00, 30.32s/it]  Debator-Judge eval:   8%|▊         | 8/100 [03:29<33:31, 21.87s/it]Debator-Judge eval:   9%|▉         | 9/100 [04:01<36:26, 24.02s/it]Debator-Judge eval:  10%|█         | 10/100 [04:31<38:09, 25.44s/it]Debator-Judge eval:  11%|█         | 11/100 [05:07<41:25, 27.93s/it]Debator-Judge eval:  12%|█▏        | 12/100 [05:32<39:55, 27.22s/it]Debator-Judge eval:  13%|█▎        | 13/100 [06:11<44:11, 30.48s/it]Debator-Judge eval:  14%|█▍        | 14/100 [06:52<48:00, 33.49s/it]Debator-Judge eval:  15%|█▌        | 15/100 [07:22<45:57, 32.44s/it]Debator-Judge eval:  16%|█▌        | 16/100 [08:08<50:38, 36.18s/it]Debator-Judge eval:  17%|█▋        | 17/100 [08:41<48:48, 35.29s/it]Debator-Judge eval:  19%|█▉        | 19/100 [09:29<40:52, 30.28s/it]Debator-Judge eval:  20%|██        | 20/100 [09:59<40:14, 30.19s/it]Debator-Judge eval:  21%|██        | 21/100 [10:27<39:00, 29.63s/it]Debator-Judge eval:  23%|██▎       | 23/100 [11:17<35:33, 27.70s/it]Debator-Judge eval:  24%|██▍       | 24/100 [11:48<35:54, 28.35s/it]Debator-Judge eval:  25%|██▌       | 25/100 [12:11<33:44, 26.99s/it]Debator-Judge eval:  26%|██▌       | 26/100 [12:44<35:10, 28.53s/it]Debator-Judge eval:  28%|██▊       | 28/100 [13:21<29:17, 24.41s/it]Debator-Judge eval:  29%|██▉       | 29/100 [13:50<30:03, 25.41s/it]Debator-Judge eval:  30%|███       | 30/100 [14:33<34:39, 29.71s/it]Debator-Judge eval:  31%|███       | 31/100 [14:59<33:05, 28.77s/it]Debator-Judge eval:  32%|███▏      | 32/100 [15:24<31:33, 27.84s/it]Debator-Judge eval:  33%|███▎      | 33/100 [15:45<28:55, 25.91s/it]Debator-Judge eval:  34%|███▍      | 34/100 [16:08<27:24, 24.91s/it]Debator-Judge eval:  35%|███▌      | 35/100 [16:39<29:09, 26.92s/it]Debator-Judge eval:  36%|███▌      | 36/100 [17:22<33:35, 31.49s/it]Debator-Judge eval:  37%|███▋      | 37/100 [17:47<31:12, 29.73s/it]Debator-Judge eval:  38%|███▊      | 38/100 [18:21<31:59, 30.97s/it]Debator-Judge eval:  39%|███▉      | 39/100 [18:49<30:24, 29.90s/it]Debator-Judge eval:  40%|████      | 40/100 [19:17<29:19, 29.32s/it]Debator-Judge eval:  41%|████      | 41/100 [19:47<29:11, 29.69s/it]Debator-Judge eval:  42%|████▏     | 42/100 [20:18<28:56, 29.95s/it]Debator-Judge eval:  43%|████▎     | 43/100 [20:53<29:59, 31.58s/it]Debator-Judge eval:  44%|████▍     | 44/100 [21:15<26:46, 28.70s/it]Debator-Judge eval:  45%|████▌     | 45/100 [21:44<26:14, 28.62s/it]Debator-Judge eval:  46%|████▌     | 46/100 [22:10<25:14, 28.05s/it]Debator-Judge eval:  47%|████▋     | 47/100 [22:35<23:50, 27.00s/it]Debator-Judge eval:  48%|████▊     | 48/100 [23:18<27:38, 31.90s/it]Debator-Judge eval:  50%|█████     | 50/100 [23:49<20:09, 24.19s/it]Debator-Judge eval:  51%|█████     | 51/100 [24:11<19:25, 23.78s/it]Debator-Judge eval:  52%|█████▏    | 52/100 [24:36<19:18, 24.13s/it]Debator-Judge eval:  53%|█████▎    | 53/100 [25:11<21:06, 26.94s/it]Debator-Judge eval:  54%|█████▍    | 54/100 [25:45<22:19, 29.12s/it]Debator-Judge eval:  55%|█████▌    | 55/100 [26:29<25:01, 33.38s/it]Debator-Judge eval:  56%|█████▌    | 56/100 [26:52<22:09, 30.22s/it]Debator-Judge eval:  57%|█████▋    | 57/100 [27:30<23:20, 32.57s/it]Debator-Judge eval:  58%|█████▊    | 58/100 [27:59<21:59, 31.41s/it]Debator-Judge eval:  59%|█████▉    | 59/100 [28:28<20:55, 30.63s/it]Debator-Judge eval:  60%|██████    | 60/100 [29:04<21:35, 32.39s/it]Debator-Judge eval:  61%|██████    | 61/100 [29:32<20:10, 31.03s/it]Debator-Judge eval:  62%|██████▏   | 62/100 [29:59<18:50, 29.76s/it]Debator-Judge eval:  63%|██████▎   | 63/100 [30:29<18:30, 30.01s/it]Debator-Judge eval:  65%|██████▌   | 65/100 [31:04<14:06, 24.19s/it]Debator-Judge eval:  66%|██████▌   | 66/100 [31:33<14:21, 25.33s/it]Debator-Judge eval:  67%|██████▋   | 67/100 [32:17<16:39, 30.29s/it]Debator-Judge eval:  68%|██████▊   | 68/100 [32:58<17:39, 33.10s/it]Debator-Judge eval:  69%|██████▉   | 69/100 [33:23<15:57, 30.89s/it]Debator-Judge eval:  71%|███████   | 71/100 [33:51<11:17, 23.37s/it]Debator-Judge eval:  72%|███████▏  | 72/100 [34:29<12:33, 26.91s/it]Debator-Judge eval:  73%|███████▎  | 73/100 [34:58<12:22, 27.49s/it]Debator-Judge eval:  73%|███████▎  | 73/100 [35:38<13:10, 29.29s/it]
-Saved debator prompt for class STANDING to ./data/sample_generations/har/prompt_examples/debator.md
-Saved judge prompt to ./data/sample_generations/har/prompt_examples/judge.md
-IDX 0 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: SITTING, Predicted: SITTING
-IDX 1 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: SITTING, Predicted: SITTING
-IDX 2 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: WALKING, Predicted: WALKING
-IDX 3: unanimous top-5 classification → LAYING. Skipping debator + judge.
-IDX 4 - CORRECT | previously INCORRECT => CHANGED (improved)
-Ground truth: WALKING_DOWNSTAIRS, Predicted: WALKING_DOWNSTAIRS
-IDX 5: unanimous top-5 classification → WALKING. Skipping debator + judge.
-IDX 6: unanimous top-5 classification → LAYING. Skipping debator + judge.
-IDX 7 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: WALKING, Predicted: WALKING
-IDX 8 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: SITTING, Predicted: SITTING
-IDX 9 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: STANDING, Predicted: STANDING
-IDX 10 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: WALKING, Predicted: WALKING
-IDX 11 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: LAYING, Predicted: LAYING
-IDX 12 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: WALKING, Predicted: WALKING_DOWNSTAIRS
-IDX 13 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: WALKING_UPSTAIRS, Predicted: WALKING
-IDX 14 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: STANDING, Predicted: LAYING
-IDX 15 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: SITTING, Predicted: STANDING
-IDX 16 - CORRECT | previously INCORRECT => CHANGED (improved)
-Ground truth: LAYING, Predicted: LAYING
-IDX 17: unanimous top-5 classification → SITTING. Skipping debator + judge.
-IDX 18 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: WALKING_DOWNSTAIRS, Predicted: WALKING_UPSTAIRS
-IDX 19 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: STANDING, Predicted: STANDING
-IDX 20 - INCORRECT | previously CORRECT => CHANGED (got worse)
-Ground truth: WALKING_UPSTAIRS, Predicted: WALKING
-IDX 21: unanimous top-5 classification → STANDING. Skipping debator + judge.
-IDX 22 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: SITTING, Predicted: STANDING
-IDX 23 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: SITTING, Predicted: STANDING
-IDX 24 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: SITTING, Predicted: SITTING
-IDX 25 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: STANDING, Predicted: STANDING
-IDX 26: unanimous top-5 classification → WALKING. Skipping debator + judge.
-IDX 27 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: STANDING, Predicted: STANDING
-IDX 28 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: WALKING, Predicted: WALKING
-IDX 29 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: LAYING, Predicted: SITTING
-IDX 30 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: WALKING_UPSTAIRS, Predicted: WALKING_DOWNSTAIRS
-IDX 31 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: SITTING, Predicted: SITTING
-IDX 32 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: LAYING, Predicted: LAYING
-IDX 33 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: WALKING, Predicted: WALKING_UPSTAIRS
-IDX 34 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: WALKING_UPSTAIRS, Predicted: WALKING_UPSTAIRS
-IDX 35 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: WALKING, Predicted: WALKING_DOWNSTAIRS
-IDX 36 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: WALKING_DOWNSTAIRS, Predicted: WALKING_UPSTAIRS
-IDX 37 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: STANDING, Predicted: LAYING
-IDX 38 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: LAYING, Predicted: LAYING
-IDX 39 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: SITTING, Predicted: SITTING
-IDX 40 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: LAYING, Predicted: LAYING
-IDX 41 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: WALKING, Predicted: WALKING_UPSTAIRS
-IDX 42 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: WALKING_DOWNSTAIRS, Predicted: WALKING
-IDX 43 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: SITTING, Predicted: LAYING
-IDX 44 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: SITTING, Predicted: SITTING
-IDX 45 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: LAYING, Predicted: LAYING
-IDX 46 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: SITTING, Predicted: STANDING
-IDX 47 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: WALKING, Predicted: WALKING_UPSTAIRS
-IDX 48: unanimous top-5 classification → LAYING. Skipping debator + judge.
-IDX 49 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: SITTING, Predicted: STANDING
-IDX 50 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: WALKING_UPSTAIRS, Predicted: WALKING_UPSTAIRS
-IDX 51 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: LAYING, Predicted: LAYING
-IDX 52 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: WALKING_UPSTAIRS, Predicted: WALKING_UPSTAIRS
-IDX 53 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: WALKING_UPSTAIRS, Predicted: WALKING
-IDX 54 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: WALKING_DOWNSTAIRS, Predicted: WALKING_UPSTAIRS
-IDX 55 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: STANDING, Predicted: STANDING
-IDX 56 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: WALKING, Predicted: WALKING
-IDX 57 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: WALKING_DOWNSTAIRS, Predicted: WALKING
-IDX 58 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: WALKING_UPSTAIRS, Predicted: WALKING
-IDX 59 - CORRECT | previously INCORRECT => CHANGED (improved)
-Ground truth: LAYING, Predicted: LAYING
-IDX 60 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: SITTING, Predicted: STANDING
-IDX 61 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: LAYING, Predicted: LAYING
-IDX 62 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: SITTING, Predicted: STANDING
-IDX 63: unanimous top-5 classification → SITTING. Skipping debator + judge.
-IDX 64 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: LAYING, Predicted: STANDING
-IDX 65 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: LAYING, Predicted: LAYING
-IDX 66 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: WALKING_DOWNSTAIRS, Predicted: WALKING_DOWNSTAIRS
-IDX 67 - INCORRECT | previously CORRECT => CHANGED (got worse)
-Ground truth: STANDING, Predicted: LAYING
-IDX 68 - CORRECT | previously CORRECT => UNCHANGED
-Ground truth: LAYING, Predicted: LAYING
-IDX 69: unanimous top-5 classification → WALKING. Skipping debator + judge.
-IDX 70 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: WALKING_DOWNSTAIRS, Predicted: WALKING
-IDX 71 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: WALKING_UPSTAIRS, Predicted: WALKING
-IDX 72 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: WALKING_UPSTAIRS, Predicted: WALKING
-IDX 73 - INCORRECT | previously INCORRECT => UNCHANGED
-Ground truth: LAYING, Predicted: Walking
-Traceback (most recent call last):
-  File "/home/hdd249/Classification/./src/blah.py", line 281, in <module>
-    class_id = mappings["name_to_id"][predicted_class]
-KeyError: 'Walking'

@@ -9,8 +9,7 @@ def append_jsonl(output_path: str, data: dict):
     Append a dictionary to the specified output JSONL file.
     Creates parent directories if needed.
     """
-    output_file = output_path
-    os.makedirs(os.path.dirname(output_file), exist_ok=True)
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
     
     with open(output_path, "a", encoding="utf-8") as f:
         json.dump(data, f)

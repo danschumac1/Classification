@@ -5,7 +5,7 @@ Make a bar plot of the best logistic regression macro-F1
 for each embedding type and dataset.
 
 Assumes a TSV with columns:
-  dataset, method, mode, C, embed_type, accuracy, macro_f1, pred_path, timestamp
+  dataset, method, mode, C, embed_types, accuracy, macro_f1, pred_path, timestamp
 
 and logistic-regression rows have:
   method = "logistic_regression"
@@ -25,39 +25,77 @@ OUT_PATH = Path("./data/images/logreg/logreg_best_f1_by_embedding_grouped_rb.png
 DIRECT_METHODS = ["ts_direct", "letsc_direct", "vis_direct"]
 SUMMARY_METHODS = ["text_summary", "letsc_summary", "vis_summary"]
 
+# New: paired feature combos (purple)
+PAIRED_METHODS = [
+    "ts_direct-text_summary",
+    "letsc_direct-letsc_summary",
+    "vis_direct-vis_summary",
+]
+
+# New: misc combos (orange)
+MISC_METHODS = [
+    "ts_direct-vis_direct",
+    "text_summary-letsc_summary-vis_summary",
+    "ts_direct-text_summary-letsc_summary-vis_summary",
+]
+
 
 def build_palette_and_order(unique_methods):
     """
-    Build:
-      - hue_order: list of embedding types in the desired plotting order
-      - palette:   dict mapping embedding_type -> color
+    Assign clean, distinct color families:
 
-    Direct methods   → shades of blue
-    Summary methods  → shades of red
-    Others           → gray
+        Direct   → Blues
+        Summary  → Reds
+        Paired   → Purples
+        Misc     → Greens
+        Others   → Greys
+
+    Ensures maximum visual separation and avoids red/orange confusion.
     """
-    # keep only the methods that actually appear
-    direct_present = [m for m in DIRECT_METHODS if m in unique_methods]
+
+    # Present groups
+    direct_present  = [m for m in DIRECT_METHODS if m in unique_methods]
     summary_present = [m for m in SUMMARY_METHODS if m in unique_methods]
-    others = [m for m in unique_methods if m not in direct_present + summary_present]
+    paired_present  = [m for m in PAIRED_METHODS if m in unique_methods]
+    misc_present    = [m for m in MISC_METHODS if m in unique_methods]
 
-    hue_order = direct_present + summary_present + others
+    others = [
+        m for m in unique_methods
+        if m not in direct_present + summary_present + paired_present + misc_present
+    ]
 
-    # colors
-    blue_shades = sns.color_palette("Blues", n_colors=max(len(direct_present) + 1, 3))[1:]
-    red_shades = sns.color_palette("Reds", n_colors=max(len(summary_present) + 1, 3))[1:]
-    grey_shades = sns.color_palette("Greys", n_colors=max(len(others) + 1, 3))[1:]
+    # order shown in legend
+    hue_order = (
+        direct_present +
+        summary_present +
+        paired_present +
+        misc_present +
+        others
+    )
+
+    # Distinct color families
+    blue_shades   = sns.color_palette("Blues",   n_colors=len(direct_present)  + 1)[1:]
+    red_shades    = sns.color_palette("Reds",    n_colors=len(summary_present) + 1)[1:]
+    purple_shades = sns.color_palette("Purples", n_colors=len(paired_present)  + 1)[1:]
+    green_shades  = sns.color_palette("Greens",  n_colors=len(misc_present)    + 1)[1:]
+    grey_shades   = sns.color_palette("Greys",   n_colors=len(others)          + 1)[1:]
 
     palette = {}
 
     for i, m in enumerate(direct_present):
-        palette[m] = blue_shades[i % len(blue_shades)]
+        palette[m] = blue_shades[i]
 
     for i, m in enumerate(summary_present):
-        palette[m] = red_shades[i % len(red_shades)]
+        palette[m] = red_shades[i]
+
+    for i, m in enumerate(paired_present):
+        palette[m] = purple_shades[i]
+
+    for i, m in enumerate(misc_present):
+        palette[m] = green_shades[i]
 
     for i, m in enumerate(others):
-        palette[m] = grey_shades[i % len(grey_shades)]
+        palette[m] = grey_shades[i]
 
     return hue_order, palette
 
@@ -78,7 +116,7 @@ def main():
     df_lr["C"] = pd.to_numeric(df_lr["C"], errors="coerce")
 
     # For compatibility with the KNN plotting logic, call it "embedding_type"
-    df_lr["embedding_type"] = df_lr["embed_type"]
+    df_lr["embedding_type"] = df_lr["embed_types"]
 
     # Best F1 per dataset × embedding_type
     idx_best = (
@@ -105,30 +143,33 @@ def main():
         palette=palette,
     )
 
-    ax.set_title("Best Logistic Regression Macro-F1 per Embedding Type\n(Grouped by Direct vs Summary)")
+    ax.set_title(
+        "Best Logistic Regression Macro-F1 per Embedding Type\n"
+        "(Direct, Summary, Paired, Misc)"
+    )
     ax.set_ylabel("Best Macro F1")
     ax.set_xlabel("Dataset")
 
     # Annotate bars with the C that achieved this best F1
-    for bar, (_, row) in zip(ax.patches, best_df.iterrows()):
-        height = bar.get_height()
-        C_val = row["C"]
-        # Format C nicely (e.g., 0.1, 1, 10)
-        if float(C_val).is_integer():
-            C_label = f"{int(C_val)}"
-        else:
-            C_label = f"{C_val:.2g}"
+    # for bar, (_, row) in zip(ax.patches, best_df.iterrows()):
+    #     height = bar.get_height()
+    #     C_val = row["C"]
+    #     # Format C nicely (e.g., 0.1, 1, 10)
+    #     if float(C_val).is_integer():
+    #         C_label = f"{int(C_val)}"
+    #     else:
+    #         C_label = f"{C_val:.2g}"
 
-        ax.annotate(
-            f"C={C_label}",
-            xy=(bar.get_x() + bar.get_width() / 2, height),
-            xytext=(0, 5),
-            textcoords="offset points",
-            ha="center",
-            va="bottom",
-            fontsize=9,
-            fontweight="bold",
-        )
+    #     ax.annotate(
+    #         f"C={C_label}",
+    #         xy=(bar.get_x() + bar.get_width() / 2, height),
+    #         xytext=(0, 5),
+    #         textcoords="offset points",
+    #         ha="center",
+    #         va="bottom",
+    #         fontsize=9,
+    #         fontweight="bold",
+    #     )
 
     plt.legend(title="Embedding Type", bbox_to_anchor=(1.05, 1), loc="upper left")
     plt.tight_layout()

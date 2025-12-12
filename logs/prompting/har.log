@@ -1,0 +1,20 @@
+
+========================================
+Master Log Session at 2025-12-11 13:07:55
+========================================
+[INFO] Clearing output file ./data/sample_generations/llamaInstruct/har/visual_prompting/5-shot.jsonl || 2025-12-11 13:07:55
+[INFO] Using 30 few-shot examples (5 per label × 6 labels) || 2025-12-11 13:07:55
+[INFO] Generating few-shot reasoning examples... || 2025-12-11 13:07:57
+[INFO] Model = meta-llama/Llama-3.2-11B-Vision-Instruct || 2025-12-11 13:08:36
+[INFO] Few-shot examples used: 30 || 2025-12-11 13:08:36
+[INFO] Running Acc after idx 9: 0.3000 || 2025-12-11 13:18:14
+[INFO] Running Acc after idx 19: 0.2000 || 2025-12-11 13:26:45
+[INFO] Running Acc after idx 29: 0.2333 || 2025-12-11 13:35:16
+[INFO] Running Acc after idx 39: 0.2250 || 2025-12-11 13:43:47
+[INFO] Running Acc after idx 49: 0.2600 || 2025-12-11 13:52:18
+[INFO] Running Acc after idx 59: 0.2167 || 2025-12-11 14:00:50
+[INFO] Running Acc after idx 69: 0.2286 || 2025-12-11 14:09:21
+[INFO] Running Acc after idx 79: 0.2125 || 2025-12-11 14:17:52
+[INFO] Running Acc after idx 89: 0.2000 || 2025-12-11 14:26:23
+[INFO] Running Acc after idx 99: 0.2000 || 2025-12-11 14:34:54
+[INFO] ✅ Finished. Results saved → ./data/sample_generations/llamaInstruct/har/visual_prompting/5-shot.jsonl || 2025-12-11 14:34:54

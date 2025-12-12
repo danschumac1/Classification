@@ -3,3 +3,6 @@ sktime
 python-dotenev
 openai==1.58.1
 matplotlib
+requests
+transformers
+accelerate

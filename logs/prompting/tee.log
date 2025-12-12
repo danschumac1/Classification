@@ -1,0 +1,9 @@
+
+========================================
+Master Log Session at 2025-12-11 16:21:17
+========================================
+[INFO] Clearing output file ./data/sample_generations/llamaInstruct/tee/visual_prompting/5-shot.jsonl || 2025-12-11 16:21:17
+[INFO] Using 35 few-shot examples (5 per label × 7 labels) || 2025-12-11 16:21:17
+[INFO] Generating few-shot reasoning examples... || 2025-12-11 16:21:20
+[INFO] Model = meta-llama/Llama-3.2-11B-Vision-Instruct || 2025-12-11 16:22:09
+[INFO] Few-shot examples used: 35 || 2025-12-11 16:22:09

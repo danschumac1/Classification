@@ -196,7 +196,6 @@ class Split:
             idxs = np.asarray([int(key)], dtype=int)
         return self._take(idxs)
 
-
 # ======================================================================
 #  I/O HELPERS FOR NEW FORMAT
 # ======================================================================

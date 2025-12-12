@@ -1,121 +1,178 @@
-#!/bin/bash
-# 2081668
-# ================================================================
-# 2025-12-04
-# Logistic Regression Baseline Launcher
-# Author: Dan Schumacher
-#
-# chmod +x ./bin/logistic_regression.sh
-# ./bin/logistic_regression.sh
-# nohup ./bin/logistic_regression.sh > ./logs/logistic_regression_master.log 2>&1 &
-# tail -f ./logs/logistic_regression_master.log
-# ================================================================
+"""
+python ./src/plot_logreg_best_bar.py
 
-###############################################################################
-# CONFIGURATION
-###############################################################################
-DATASETS=(
-    "har"
-    "emg"
-    "ctu"
-    "tee"
-    # "rwc" # LATER
-)
+Make a bar plot of the best logistic regression macro-F1
+for each embedding type and dataset.
 
-EMBED_TYPES=(
-    # SINGLE FEATURES
-    # "ts_direct"
-    # "letsc_direct"
-    # "vis_direct"
-    # "text_summary"
-    # "letsc_summary"
-    # "vis_summary"
-    # MULTI-FEATURES
-    "ts_direct-text_summary"
-    "vis_direct-vis_summary"
-    "letsc_direct-letsc_summary"
-    "ts_direct-vis_direct"
-    "text_summary-letsc_summary-vis_summary"
-    "ts_direct-text_summary-letsc_summary-vis_summary"
+Assumes a TSV with columns:
+  dataset, method, mode, C, embed_types, accuracy, macro_f1, pred_path, timestamp
+
+and logistic-regression rows have:
+  method = "logistic_regression"
+"""
+
+from pathlib import Path
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+RESULTS_PATH = "./data/logreg_results.tsv"
+OUT_PATH = Path("./data/images/logreg/logreg_best_f1_by_embedding_grouped_rb.png")
+
+# ------------------------------------------------------------------
+# Group definitions
+# ------------------------------------------------------------------
+DIRECT_METHODS = ["ts_direct", "letsc_direct", "vis_direct"]
+SUMMARY_METHODS = ["text_summary", "letsc_summary", "vis_summary"]
+
+# New: paired feature combos (purple)
+PAIRED_METHODS = [
+    "ts_direct-text_summary",
+    "vis_direct-vis_summary",
+    "letsc_direct-letsc_summary",
+]
+
+# New: misc combos (orange)
+MISC_METHODS = [
+    "ts_direct-vis_direct",
+    "text_summary-letsc_summary-vis_summary",
+    "ts_direct-text_summary-letsc_summary-vis_summary",
+]
 
 
+def build_palette_and_order(unique_methods):
+    """
+    Build:
+      - hue_order: list of embedding types in the desired plotting order
+      - palette:   dict mapping embedding_type -> color
 
-)
+    Direct methods   → shades of blue
+    Summary methods  → shades of red
+    Paired combos    → shades of purple
+    Misc combos      → shades of orange
+    Others           → gray
+    """
+    # keep only the methods that actually appear
+    direct_present = [m for m in DIRECT_METHODS if m in unique_methods]
+    summary_present = [m for m in SUMMARY_METHODS if m in unique_methods]
+    paired_present = [m for m in PAIRED_METHODS if m in unique_methods]
+    misc_present = [m for m in MISC_METHODS if m in unique_methods]
 
-# Logistic regression regularization strengths
-C_VALUES=( # must be floats (include decimal, or will fail)
-    0.1 
-    1.0
-    10.0
-)
+    # anything not in the above groups is "other"
+    others = [
+        m
+        for m in unique_methods
+        if m not in direct_present + summary_present + paired_present + misc_present
+    ]
 
-NORMALIZE=1      # 1 = normalize, 0 = no normalization
-METHOD="logistic_regression"  # for eval logging
+    # order: direct → summary → paired → misc → others
+    hue_order = direct_present + summary_present + paired_present + misc_present + others
 
-###############################################################################
-# LOOP
-###############################################################################
+    # base palettes
+    blue_shades = sns.color_palette("Blues", n_colors=max(len(direct_present) + 1, 3))[1:]
+    red_shades = sns.color_palette("Reds", n_colors=max(len(summary_present) + 1, 3))[1:]
+    purple_shades = sns.color_palette("Purples", n_colors=max(len(paired_present) + 1, 3))[1:]
+    orange_shades = sns.color_palette("Oranges", n_colors=max(len(misc_present) + 1, 3))[1:]
+    grey_shades = sns.color_palette("Greys", n_colors=max(len(others) + 1, 3))[1:]
 
-for dataset in "${DATASETS[@]}"; do
-    for e_type in "${EMBED_TYPES[@]}"; do
-        for C in "${C_VALUES[@]}"; do
-            echo "=============================================================="
-            echo "Logistic Regression Pipeline"
-            echo "Dataset:        $dataset"
-            echo "Embedding Type: $e_type"
-            echo "C (reg):        $C"
-            echo "Normalize:      $NORMALIZE"
-            echo "=============================================================="
+    palette = {}
 
-            # ------------------------------
-            # Run logistic regression script
-            # ------------------------------
-            python ./src/logistic_regression.py \
-                --dataset "$dataset" \
-                --embedding_type "$e_type" \
-                --C "$C" \
-                --normalize "$NORMALIZE"
+    for i, m in enumerate(direct_present):
+        palette[m] = blue_shades[i % len(blue_shades)]
 
-            status=$?
-            if [[ $status -ne 0 ]]; then
-                echo "❌ Error: logistic_regression.py failed for dataset=$dataset, embedding_type=$e_type, C=$C"
-                exit 1
-            fi
+    for i, m in enumerate(summary_present):
+        palette[m] = red_shades[i % len(red_shades)]
 
-            echo "logistic_regression complete → dataset=$dataset  type=$e_type  C=$C"
-            echo ""
+    for i, m in enumerate(paired_present):
+        palette[m] = purple_shades[i % len(purple_shades)]
 
-            # ------------------------------
-            # Run evaluation on logistic_regression outputs
+    for i, m in enumerate(misc_present):
+        palette[m] = orange_shades[i % len(orange_shades)]
 
-            C_SAFE="${C//./p}"   # replace "." with "p" for safe filenames
+    for i, m in enumerate(others):
+        palette[m] = grey_shades[i % len(grey_shades)]
 
-            OUT_JSONL="./data/sample_generations/${dataset}/logistic_regression/${e_type}/${C_SAFE}.jsonl"
-            MODE="${e_type}-C${C}"
+    return hue_order, palette
 
-            echo "Evaluating predictions at: $OUT_JSONL"
-            echo "  dataset = ${dataset}"
-            echo "  method  = ${METHOD}"
-            echo "  mode    = ${MODE}"
 
-            python ./src/eval.py \
-                --dataset "$dataset" \
-                --method "$METHOD" \
-                --mode "$MODE" \
-                --pred_path "$OUT_JSONL"
+def main():
+    OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
 
-            eval_status=$?
-            if [[ $eval_status -ne 0 ]]; then
-                echo "❌ Error: eval.py failed for dataset=$dataset, embedding_type=$e_type, C=$C"
-                exit 1
-            fi
+    df = pd.read_csv(RESULTS_PATH, sep="\t")
+    print(df)
 
-            echo "Eval complete → dataset=$dataset  type=$e_type  C=$C"
-            echo ""
+    # Keep only logistic regression rows
+    df_lr = df[df["method"] == "logistic_regression"].copy()
+    if df_lr.empty:
+        raise ValueError("No logistic_regression entries found in logreg_results.tsv.")
 
-            wait $!
-        done
-    done
-done
+    # Ensure fields are in the right type
+    df_lr["macro_f1"] = pd.to_numeric(df_lr["macro_f1"], errors="coerce")
+    df_lr["C"] = pd.to_numeric(df_lr["C"], errors="coerce")
 
-printf "\n\nFILE DONE RUNNING 🎉🎉🎉\n\n"
+    # For compatibility with the KNN plotting logic, call it "embedding_type"
+    df_lr["embedding_type"] = df_lr["embed_types"]
+
+    # Best F1 per dataset × embedding_type
+    idx_best = (
+        df_lr.groupby(["dataset", "embedding_type"])["macro_f1"]
+        .idxmax()
+        .dropna()
+        .astype(int)
+    )
+    best_df = df_lr.loc[idx_best].copy()
+
+    # Build consistent ordering + palette
+    embed_methods = sorted(best_df["embedding_type"].unique())
+    hue_order, palette = build_palette_and_order(embed_methods)
+
+    sns.set(style="whitegrid")
+    plt.figure(figsize=(12, 6))
+
+    ax = sns.barplot(
+        data=best_df,
+        x="dataset",
+        y="macro_f1",
+        hue="embedding_type",
+        hue_order=hue_order,
+        palette=palette,
+    )
+
+    ax.set_title(
+        "Best Logistic Regression Macro-F1 per Embedding Type\n"
+        "(Direct, Summary, Paired, Misc)"
+    )
+    ax.set_ylabel("Best Macro F1")
+    ax.set_xlabel("Dataset")
+
+    # Annotate bars with the C that achieved this best F1
+    for bar, (_, row) in zip(ax.patches, best_df.iterrows()):
+        height = bar.get_height()
+        C_val = row["C"]
+        # Format C nicely (e.g., 0.1, 1, 10)
+        if float(C_val).is_integer():
+            C_label = f"{int(C_val)}"
+        else:
+            C_label = f"{C_val:.2g}"
+
+        ax.annotate(
+            f"C={C_label}",
+            xy=(bar.get_x() + bar.get_width() / 2, height),
+            xytext=(0, 5),
+            textcoords="offset points",
+            ha="center",
+            va="bottom",
+            fontsize=9,
+            fontweight="bold",
+        )
+
+    plt.legend(title="Embedding Type", bbox_to_anchor=(1.05, 1), loc="upper left")
+    plt.tight_layout()
+    plt.savefig(OUT_PATH, dpi=300)
+    plt.close()
+
+    print(f"Saved grouped-color LogReg bar plot → {OUT_PATH}")
+
+
+if __name__ == "__main__":
+    main()

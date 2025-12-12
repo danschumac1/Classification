@@ -149,3 +149,8 @@ def  get_dim_names(dataset: str) -> list[str]:
         legends = ["time_series"]
 
     return legends
+
+QUESTION_TAG = (
+    "Think step by step and explain your reasoning. Then, provide a final answer."
+    " The final answer should be formatted as: The answer is [x], where x is one of the options provided."
+    " For example, if you think the answer is option B, you would say: The answer is [B].")

@@ -1,0 +1,546 @@
+nohup: ignoring input
+==============================================================
+Dataset:       har
+Model:         meta-llama/Llama-3.2-11B-Vision-Instruct
+n_shots:       0
+Batch size:    10
+GPU(s):        2
+==============================================================
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:02,  1.40it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:02,  1.50it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:01<00:01,  1.55it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:02<00:00,  1.55it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:02<00:00,  2.05it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:02<00:00,  1.77it/s]
+
+========================================
+Master Log Session at 2025-12-11 12:15:37
+========================================
+
+[INFO] Clearing output file ./data/sample_generations/llamaInstruct/har/visual_prompting/0-shot.jsonl || 2025-12-11 12:15:37
+Output JSONL: ./data/sample_generations/llamaInstruct/har/visual_prompting/0-shot.jsonl
+[INFO] Zero-shot prompting (no few-shot examples). || 2025-12-11 12:15:37
+[INFO] Model = meta-llama/Llama-3.2-11B-Vision-Instruct || 2025-12-11 12:15:37
+[INFO] Few-shot examples used: 0 || 2025-12-11 12:15:37
+Batch prompting:   0%|          | 0/10 [00:00<?, ?it/s]Batch prompting:  10%|█         | 1/10 [00:16<02:28, 16.50s/it]Batch prompting:  20%|██        | 2/10 [00:36<02:28, 18.62s/it]Batch prompting:  30%|███       | 3/10 [01:01<02:31, 21.68s/it]Batch prompting:  40%|████      | 4/10 [01:18<01:58, 19.77s/it]Batch prompting:  50%|█████     | 5/10 [01:33<01:29, 17.86s/it]Batch prompting:  60%|██████    | 6/10 [01:50<01:10, 17.65s/it]Batch prompting:  70%|███████   | 7/10 [02:11<00:55, 18.60s/it]Batch prompting:  80%|████████  | 8/10 [02:26<00:34, 17.48s/it]Batch prompting:  90%|█████████ | 9/10 [02:43<00:17, 17.40s/it]Batch prompting: 100%|██████████| 10/10 [02:58<00:00, 16.69s/it]Batch prompting: 100%|██████████| 10/10 [02:58<00:00, 17.85s/it]
+[INFO] Running Acc after idx 9: 0.2000 || 2025-12-11 12:15:54
+[INFO] Running Acc after idx 19: 0.2000 || 2025-12-11 12:16:14
+[INFO] Running Acc after idx 29: 0.1667 || 2025-12-11 12:16:39
+[INFO] Running Acc after idx 39: 0.2000 || 2025-12-11 12:16:56
+[INFO] Running Acc after idx 49: 0.2200 || 2025-12-11 12:17:10
+[INFO] Running Acc after idx 59: 0.2167 || 2025-12-11 12:17:27
+[INFO] Running Acc after idx 69: 0.2143 || 2025-12-11 12:17:48
+[INFO] Running Acc after idx 79: 0.1875 || 2025-12-11 12:18:03
+[INFO] Running Acc after idx 89: 0.2000 || 2025-12-11 12:18:20
+[INFO] Running Acc after idx 99: 0.2200 || 2025-12-11 12:18:35
+[INFO] ✅ Finished. Results saved → ./data/sample_generations/llamaInstruct/har/visual_prompting/0-shot.jsonl || 2025-12-11 12:18:35
+Prompting complete for dataset=har, model=meta-llama/Llama-3.2-11B-Vision-Instruct, n_shots=0.
+
+==============================================================
+Dataset:       har
+Model:         meta-llama/Llama-3.2-11B-Vision-Instruct
+n_shots:       3
+Batch size:    10
+GPU(s):        2
+==============================================================
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:02,  1.50it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:01,  1.56it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:01<00:01,  1.59it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:02<00:00,  1.59it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.73it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.66it/s]
+
+========================================
+Master Log Session at 2025-12-11 12:18:46
+========================================
+
+[INFO] Clearing output file ./data/sample_generations/llamaInstruct/har/visual_prompting/3-shot.jsonl || 2025-12-11 12:18:46
+Output JSONL: ./data/sample_generations/llamaInstruct/har/visual_prompting/3-shot.jsonl
+[INFO] Using 18 few-shot examples (3 per label × 6 labels) || 2025-12-11 12:18:46
+[INFO] Generating few-shot reasoning examples... || 2025-12-11 12:18:48
+[INFO] Model = meta-llama/Llama-3.2-11B-Vision-Instruct || 2025-12-11 12:19:16
+[INFO] Few-shot examples used: 18 || 2025-12-11 12:19:16
+Batch prompting:   0%|          | 0/10 [00:00<?, ?it/s]Batch prompting:  10%|█         | 1/10 [05:08<46:18, 308.77s/it]Batch prompting:  20%|██        | 2/10 [09:43<38:29, 288.72s/it]Batch prompting:  30%|███       | 3/10 [14:20<33:05, 283.61s/it]Batch prompting:  40%|████      | 4/10 [19:11<28:37, 286.19s/it]Batch prompting:  50%|█████     | 5/10 [24:22<24:35, 295.15s/it]Batch prompting:  60%|██████    | 6/10 [29:05<19:24, 291.22s/it]Batch prompting:  70%|███████   | 7/10 [33:49<14:25, 288.62s/it]Batch prompting:  80%|████████  | 8/10 [38:54<09:47, 293.96s/it]Batch prompting:  90%|█████████ | 9/10 [43:36<04:50, 290.35s/it]Batch prompting: 100%|██████████| 10/10 [48:26<00:00, 290.28s/it]Batch prompting: 100%|██████████| 10/10 [48:26<00:00, 290.70s/it]
+[INFO] Running Acc after idx 9: 0.3000 || 2025-12-11 12:24:24
+[INFO] Running Acc after idx 19: 0.2000 || 2025-12-11 12:28:59
+[INFO] Running Acc after idx 29: 0.2333 || 2025-12-11 12:33:37
+[INFO] Running Acc after idx 39: 0.2250 || 2025-12-11 12:38:27
+[INFO] Running Acc after idx 49: 0.2600 || 2025-12-11 12:43:38
+[INFO] Running Acc after idx 59: 0.2167 || 2025-12-11 12:48:21
+[INFO] Running Acc after idx 69: 0.2286 || 2025-12-11 12:53:05
+[INFO] Running Acc after idx 79: 0.2125 || 2025-12-11 12:58:10
+[INFO] Running Acc after idx 89: 0.2000 || 2025-12-11 13:02:52
+[INFO] Running Acc after idx 99: 0.2000 || 2025-12-11 13:07:43
+[INFO] ✅ Finished. Results saved → ./data/sample_generations/llamaInstruct/har/visual_prompting/3-shot.jsonl || 2025-12-11 13:07:43
+Prompting complete for dataset=har, model=meta-llama/Llama-3.2-11B-Vision-Instruct, n_shots=3.
+
+==============================================================
+Dataset:       har
+Model:         meta-llama/Llama-3.2-11B-Vision-Instruct
+n_shots:       5
+Batch size:    10
+GPU(s):        2
+==============================================================
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:02,  1.43it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:01,  1.50it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:01<00:01,  1.53it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:02<00:00,  1.53it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.77it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.64it/s]
+
+========================================
+Master Log Session at 2025-12-11 13:07:55
+========================================
+
+[INFO] Clearing output file ./data/sample_generations/llamaInstruct/har/visual_prompting/5-shot.jsonl || 2025-12-11 13:07:55
+Output JSONL: ./data/sample_generations/llamaInstruct/har/visual_prompting/5-shot.jsonl
+[INFO] Using 30 few-shot examples (5 per label × 6 labels) || 2025-12-11 13:07:55
+[INFO] Generating few-shot reasoning examples... || 2025-12-11 13:07:57
+[INFO] Model = meta-llama/Llama-3.2-11B-Vision-Instruct || 2025-12-11 13:08:36
+[INFO] Few-shot examples used: 30 || 2025-12-11 13:08:36
+Batch prompting:   0%|          | 0/10 [00:00<?, ?it/s]Batch prompting:  10%|█         | 1/10 [09:37<1:26:35, 577.25s/it]Batch prompting:  20%|██        | 2/10 [18:08<1:11:46, 538.35s/it]Batch prompting:  30%|███       | 3/10 [26:39<1:01:21, 525.89s/it]Batch prompting:  40%|████      | 4/10 [35:10<52:00, 520.02s/it]  Batch prompting:  50%|█████     | 5/10 [43:41<43:04, 516.82s/it]Batch prompting:  60%|██████    | 6/10 [52:13<34:20, 515.02s/it]Batch prompting:  70%|███████   | 7/10 [1:00:44<25:41, 513.70s/it]Batch prompting:  80%|████████  | 8/10 [1:09:15<17:05, 512.92s/it]Batch prompting:  90%|█████████ | 9/10 [1:17:46<08:32, 512.34s/it]Batch prompting: 100%|██████████| 10/10 [1:26:17<00:00, 511.95s/it]Batch prompting: 100%|██████████| 10/10 [1:26:17<00:00, 517.75s/it]
+[INFO] Running Acc after idx 9: 0.3000 || 2025-12-11 13:18:14
+[INFO] Running Acc after idx 19: 0.2000 || 2025-12-11 13:26:45
+[INFO] Running Acc after idx 29: 0.2333 || 2025-12-11 13:35:16
+[INFO] Running Acc after idx 39: 0.2250 || 2025-12-11 13:43:47
+[INFO] Running Acc after idx 49: 0.2600 || 2025-12-11 13:52:18
+[INFO] Running Acc after idx 59: 0.2167 || 2025-12-11 14:00:50
+[INFO] Running Acc after idx 69: 0.2286 || 2025-12-11 14:09:21
+[INFO] Running Acc after idx 79: 0.2125 || 2025-12-11 14:17:52
+[INFO] Running Acc after idx 89: 0.2000 || 2025-12-11 14:26:23
+[INFO] Running Acc after idx 99: 0.2000 || 2025-12-11 14:34:54
+[INFO] ✅ Finished. Results saved → ./data/sample_generations/llamaInstruct/har/visual_prompting/5-shot.jsonl || 2025-12-11 14:34:54
+Prompting complete for dataset=har, model=meta-llama/Llama-3.2-11B-Vision-Instruct, n_shots=5.
+
+==============================================================
+Dataset:       har
+Model:         meta-llama/Llama-3.2-11B-Vision
+n_shots:       0
+Batch size:    10
+GPU(s):        2
+==============================================================
+usage: llamaPrompting.py [-h] --dataset {ctu,emg,har,tee}
+                         [--model {meta-llama/Llama-3.2-11B-Vision-Instruct}]
+                         [--batch_size BATCH_SIZE] [--n_shots N_SHOTS]
+llamaPrompting.py: error: argument --model: invalid choice: 'meta-llama/Llama-3.2-11B-Vision' (choose from 'meta-llama/Llama-3.2-11B-Vision-Instruct')
+Prompting complete for dataset=har, model=meta-llama/Llama-3.2-11B-Vision, n_shots=0.
+
+==============================================================
+Dataset:       har
+Model:         meta-llama/Llama-3.2-11B-Vision
+n_shots:       3
+Batch size:    10
+GPU(s):        2
+==============================================================
+usage: llamaPrompting.py [-h] --dataset {ctu,emg,har,tee}
+                         [--model {meta-llama/Llama-3.2-11B-Vision-Instruct}]
+                         [--batch_size BATCH_SIZE] [--n_shots N_SHOTS]
+llamaPrompting.py: error: argument --model: invalid choice: 'meta-llama/Llama-3.2-11B-Vision' (choose from 'meta-llama/Llama-3.2-11B-Vision-Instruct')
+Prompting complete for dataset=har, model=meta-llama/Llama-3.2-11B-Vision, n_shots=3.
+
+==============================================================
+Dataset:       har
+Model:         meta-llama/Llama-3.2-11B-Vision
+n_shots:       5
+Batch size:    10
+GPU(s):        2
+==============================================================
+usage: llamaPrompting.py [-h] --dataset {ctu,emg,har,tee}
+                         [--model {meta-llama/Llama-3.2-11B-Vision-Instruct}]
+                         [--batch_size BATCH_SIZE] [--n_shots N_SHOTS]
+llamaPrompting.py: error: argument --model: invalid choice: 'meta-llama/Llama-3.2-11B-Vision' (choose from 'meta-llama/Llama-3.2-11B-Vision-Instruct')
+Prompting complete for dataset=har, model=meta-llama/Llama-3.2-11B-Vision, n_shots=5.
+
+==============================================================
+Dataset:       ctu
+Model:         meta-llama/Llama-3.2-11B-Vision-Instruct
+n_shots:       0
+Batch size:    10
+GPU(s):        2
+==============================================================
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:02,  1.45it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:01,  1.52it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:01<00:01,  1.55it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:02<00:00,  1.55it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:02<00:00,  2.05it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:02<00:00,  1.78it/s]
+
+========================================
+Master Log Session at 2025-12-11 14:35:15
+========================================
+
+[INFO] Clearing output file ./data/sample_generations/llamaInstruct/ctu/visual_prompting/0-shot.jsonl || 2025-12-11 14:35:15
+Output JSONL: ./data/sample_generations/llamaInstruct/ctu/visual_prompting/0-shot.jsonl
+[INFO] Zero-shot prompting (no few-shot examples). || 2025-12-11 14:35:15
+[INFO] Model = meta-llama/Llama-3.2-11B-Vision-Instruct || 2025-12-11 14:35:15
+[INFO] Few-shot examples used: 0 || 2025-12-11 14:35:15
+Batch prompting:   0%|          | 0/10 [00:00<?, ?it/s]Batch prompting:  10%|█         | 1/10 [00:15<02:17, 15.23s/it]Batch prompting:  20%|██        | 2/10 [00:30<02:01, 15.18s/it]Batch prompting:  30%|███       | 3/10 [00:45<01:44, 14.95s/it]Batch prompting:  40%|████      | 4/10 [00:58<01:26, 14.35s/it]Batch prompting:  50%|█████     | 5/10 [01:13<01:12, 14.52s/it]Batch prompting:  60%|██████    | 6/10 [01:27<00:57, 14.42s/it]Batch prompting:  70%|███████   | 7/10 [01:42<00:43, 14.59s/it]Batch prompting:  80%|████████  | 8/10 [01:57<00:29, 14.68s/it]Batch prompting:  90%|█████████ | 9/10 [02:09<00:13, 13.97s/it]Batch prompting: 100%|██████████| 10/10 [02:25<00:00, 14.37s/it]Batch prompting: 100%|██████████| 10/10 [02:25<00:00, 14.50s/it]
+[INFO] Running Acc after idx 9: 0.7000 || 2025-12-11 14:35:30
+[INFO] Running Acc after idx 19: 0.7500 || 2025-12-11 14:35:45
+[INFO] Running Acc after idx 29: 0.6667 || 2025-12-11 14:36:00
+[INFO] Running Acc after idx 39: 0.6000 || 2025-12-11 14:36:13
+[INFO] Running Acc after idx 49: 0.6000 || 2025-12-11 14:36:28
+[INFO] Running Acc after idx 59: 0.6167 || 2025-12-11 14:36:42
+[INFO] Running Acc after idx 69: 0.6143 || 2025-12-11 14:36:57
+[INFO] Running Acc after idx 79: 0.5750 || 2025-12-11 14:37:12
+[INFO] Running Acc after idx 89: 0.5667 || 2025-12-11 14:37:25
+[INFO] Running Acc after idx 99: 0.5600 || 2025-12-11 14:37:40
+[INFO] ✅ Finished. Results saved → ./data/sample_generations/llamaInstruct/ctu/visual_prompting/0-shot.jsonl || 2025-12-11 14:37:40
+Prompting complete for dataset=ctu, model=meta-llama/Llama-3.2-11B-Vision-Instruct, n_shots=0.
+
+==============================================================
+Dataset:       ctu
+Model:         meta-llama/Llama-3.2-11B-Vision-Instruct
+n_shots:       3
+Batch size:    10
+GPU(s):        2
+==============================================================
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:02,  1.39it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:02,  1.46it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:02<00:01,  1.51it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:02<00:00,  1.51it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:02<00:00,  2.00it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:02<00:00,  1.73it/s]
+
+========================================
+Master Log Session at 2025-12-11 14:37:50
+========================================
+
+[INFO] Clearing output file ./data/sample_generations/llamaInstruct/ctu/visual_prompting/3-shot.jsonl || 2025-12-11 14:37:50
+Output JSONL: ./data/sample_generations/llamaInstruct/ctu/visual_prompting/3-shot.jsonl
+[INFO] Using 6 few-shot examples (3 per label × 2 labels) || 2025-12-11 14:37:50
+[INFO] Generating few-shot reasoning examples... || 2025-12-11 14:37:51
+[INFO] Model = meta-llama/Llama-3.2-11B-Vision-Instruct || 2025-12-11 14:38:00
+[INFO] Few-shot examples used: 6 || 2025-12-11 14:38:00
+Batch prompting:   0%|          | 0/10 [00:00<?, ?it/s]Batch prompting:  10%|█         | 1/10 [02:03<18:32, 123.62s/it]Batch prompting:  20%|██        | 2/10 [04:05<16:20, 122.50s/it]Batch prompting:  30%|███       | 3/10 [06:04<14:08, 121.18s/it]Batch prompting:  40%|████      | 4/10 [08:04<12:04, 120.72s/it]Batch prompting:  50%|█████     | 5/10 [10:05<10:03, 120.78s/it]Batch prompting:  60%|██████    | 6/10 [12:10<08:07, 121.99s/it]Batch prompting:  70%|███████   | 7/10 [14:12<06:06, 122.24s/it]Batch prompting:  80%|████████  | 8/10 [16:13<04:03, 121.55s/it]Batch prompting:  90%|█████████ | 9/10 [18:18<02:02, 122.80s/it]Batch prompting: 100%|██████████| 10/10 [20:17<00:00, 121.64s/it]Batch prompting: 100%|██████████| 10/10 [20:17<00:00, 121.76s/it]
+[INFO] Running Acc after idx 9: 0.5000 || 2025-12-11 14:40:04
+[INFO] Running Acc after idx 19: 0.5500 || 2025-12-11 14:42:06
+[INFO] Running Acc after idx 29: 0.5333 || 2025-12-11 14:44:05
+[INFO] Running Acc after idx 39: 0.5000 || 2025-12-11 14:46:05
+[INFO] Running Acc after idx 49: 0.5600 || 2025-12-11 14:48:06
+[INFO] Running Acc after idx 59: 0.5833 || 2025-12-11 14:50:10
+[INFO] Running Acc after idx 69: 0.5857 || 2025-12-11 14:52:13
+[INFO] Running Acc after idx 79: 0.5625 || 2025-12-11 14:54:13
+[INFO] Running Acc after idx 89: 0.5667 || 2025-12-11 14:56:19
+[INFO] Running Acc after idx 99: 0.5700 || 2025-12-11 14:58:18
+[INFO] ✅ Finished. Results saved → ./data/sample_generations/llamaInstruct/ctu/visual_prompting/3-shot.jsonl || 2025-12-11 14:58:18
+Prompting complete for dataset=ctu, model=meta-llama/Llama-3.2-11B-Vision-Instruct, n_shots=3.
+
+==============================================================
+Dataset:       ctu
+Model:         meta-llama/Llama-3.2-11B-Vision-Instruct
+n_shots:       5
+Batch size:    10
+GPU(s):        2
+==============================================================
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.20it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:02,  1.26it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:02<00:01,  1.29it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:03<00:00,  1.28it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.70it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.47it/s]
+
+========================================
+Master Log Session at 2025-12-11 14:58:29
+========================================
+
+[INFO] Clearing output file ./data/sample_generations/llamaInstruct/ctu/visual_prompting/5-shot.jsonl || 2025-12-11 14:58:29
+Output JSONL: ./data/sample_generations/llamaInstruct/ctu/visual_prompting/5-shot.jsonl
+[INFO] Using 10 few-shot examples (5 per label × 2 labels) || 2025-12-11 14:58:29
+[INFO] Generating few-shot reasoning examples... || 2025-12-11 14:58:30
+[INFO] Model = meta-llama/Llama-3.2-11B-Vision-Instruct || 2025-12-11 14:58:45
+[INFO] Few-shot examples used: 10 || 2025-12-11 14:58:45
+Batch prompting:   0%|          | 0/10 [00:00<?, ?it/s]Batch prompting:  10%|█         | 1/10 [03:04<27:43, 184.87s/it]Batch prompting:  20%|██        | 2/10 [06:11<24:48, 186.03s/it]Batch prompting:  30%|███       | 3/10 [09:15<21:34, 184.97s/it]Batch prompting:  40%|████      | 4/10 [12:24<18:38, 186.40s/it]Batch prompting:  50%|█████     | 5/10 [15:31<15:33, 186.75s/it]Batch prompting:  60%|██████    | 6/10 [18:34<12:21, 185.38s/it]Batch prompting:  70%|███████   | 7/10 [21:40<09:16, 185.64s/it]Batch prompting:  80%|████████  | 8/10 [24:44<06:10, 185.12s/it]Batch prompting:  90%|█████████ | 9/10 [27:55<03:07, 187.10s/it]Batch prompting: 100%|██████████| 10/10 [31:03<00:00, 187.28s/it]Batch prompting: 100%|██████████| 10/10 [31:03<00:00, 186.34s/it]
+[INFO] Running Acc after idx 9: 0.5000 || 2025-12-11 15:01:50
+[INFO] Running Acc after idx 19: 0.3500 || 2025-12-11 15:04:56
+[INFO] Running Acc after idx 29: 0.4000 || 2025-12-11 15:08:00
+[INFO] Running Acc after idx 39: 0.5000 || 2025-12-11 15:11:09
+[INFO] Running Acc after idx 49: 0.4800 || 2025-12-11 15:14:16
+[INFO] Running Acc after idx 59: 0.4833 || 2025-12-11 15:17:19
+[INFO] Running Acc after idx 69: 0.4571 || 2025-12-11 15:20:25
+[INFO] Running Acc after idx 79: 0.4750 || 2025-12-11 15:23:29
+[INFO] Running Acc after idx 89: 0.4667 || 2025-12-11 15:26:40
+[INFO] Running Acc after idx 99: 0.4700 || 2025-12-11 15:29:48
+[INFO] ✅ Finished. Results saved → ./data/sample_generations/llamaInstruct/ctu/visual_prompting/5-shot.jsonl || 2025-12-11 15:29:48
+Prompting complete for dataset=ctu, model=meta-llama/Llama-3.2-11B-Vision-Instruct, n_shots=5.
+
+==============================================================
+Dataset:       ctu
+Model:         meta-llama/Llama-3.2-11B-Vision
+n_shots:       0
+Batch size:    10
+GPU(s):        2
+==============================================================
+usage: llamaPrompting.py [-h] --dataset {ctu,emg,har,tee}
+                         [--model {meta-llama/Llama-3.2-11B-Vision-Instruct}]
+                         [--batch_size BATCH_SIZE] [--n_shots N_SHOTS]
+llamaPrompting.py: error: argument --model: invalid choice: 'meta-llama/Llama-3.2-11B-Vision' (choose from 'meta-llama/Llama-3.2-11B-Vision-Instruct')
+Prompting complete for dataset=ctu, model=meta-llama/Llama-3.2-11B-Vision, n_shots=0.
+
+==============================================================
+Dataset:       ctu
+Model:         meta-llama/Llama-3.2-11B-Vision
+n_shots:       3
+Batch size:    10
+GPU(s):        2
+==============================================================
+usage: llamaPrompting.py [-h] --dataset {ctu,emg,har,tee}
+                         [--model {meta-llama/Llama-3.2-11B-Vision-Instruct}]
+                         [--batch_size BATCH_SIZE] [--n_shots N_SHOTS]
+llamaPrompting.py: error: argument --model: invalid choice: 'meta-llama/Llama-3.2-11B-Vision' (choose from 'meta-llama/Llama-3.2-11B-Vision-Instruct')
+Prompting complete for dataset=ctu, model=meta-llama/Llama-3.2-11B-Vision, n_shots=3.
+
+==============================================================
+Dataset:       ctu
+Model:         meta-llama/Llama-3.2-11B-Vision
+n_shots:       5
+Batch size:    10
+GPU(s):        2
+==============================================================
+usage: llamaPrompting.py [-h] --dataset {ctu,emg,har,tee}
+                         [--model {meta-llama/Llama-3.2-11B-Vision-Instruct}]
+                         [--batch_size BATCH_SIZE] [--n_shots N_SHOTS]
+llamaPrompting.py: error: argument --model: invalid choice: 'meta-llama/Llama-3.2-11B-Vision' (choose from 'meta-llama/Llama-3.2-11B-Vision-Instruct')
+Prompting complete for dataset=ctu, model=meta-llama/Llama-3.2-11B-Vision, n_shots=5.
+
+==============================================================
+Dataset:       emg
+Model:         meta-llama/Llama-3.2-11B-Vision-Instruct
+n_shots:       0
+Batch size:    10
+GPU(s):        2
+==============================================================
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.29it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:02,  1.34it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:02<00:01,  1.36it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:02<00:00,  1.36it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.80it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.57it/s]
+
+========================================
+Master Log Session at 2025-12-11 15:30:09
+========================================
+
+[INFO] Clearing output file ./data/sample_generations/llamaInstruct/emg/visual_prompting/0-shot.jsonl || 2025-12-11 15:30:09
+Output JSONL: ./data/sample_generations/llamaInstruct/emg/visual_prompting/0-shot.jsonl
+[INFO] Zero-shot prompting (no few-shot examples). || 2025-12-11 15:30:09
+[INFO] Model = meta-llama/Llama-3.2-11B-Vision-Instruct || 2025-12-11 15:30:09
+[INFO] Few-shot examples used: 0 || 2025-12-11 15:30:09
+Batch prompting:   0%|          | 0/2 [00:00<?, ?it/s]Batch prompting:  50%|█████     | 1/2 [00:15<00:15, 15.17s/it]Batch prompting: 100%|██████████| 2/2 [00:26<00:00, 12.80s/it]Batch prompting: 100%|██████████| 2/2 [00:26<00:00, 13.15s/it]
+[INFO] Running Acc after idx 9: 0.4000 || 2025-12-11 15:30:24
+[INFO] Running Acc after idx 14: 0.4667 || 2025-12-11 15:30:35
+[INFO] ✅ Finished. Results saved → ./data/sample_generations/llamaInstruct/emg/visual_prompting/0-shot.jsonl || 2025-12-11 15:30:35
+Prompting complete for dataset=emg, model=meta-llama/Llama-3.2-11B-Vision-Instruct, n_shots=0.
+
+==============================================================
+Dataset:       emg
+Model:         meta-llama/Llama-3.2-11B-Vision-Instruct
+n_shots:       3
+Batch size:    10
+GPU(s):        2
+==============================================================
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.26it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:02,  1.30it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:02<00:01,  1.32it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:03<00:00,  1.33it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.78it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.54it/s]
+
+========================================
+Master Log Session at 2025-12-11 15:30:46
+========================================
+
+[INFO] Clearing output file ./data/sample_generations/llamaInstruct/emg/visual_prompting/3-shot.jsonl || 2025-12-11 15:30:46
+Output JSONL: ./data/sample_generations/llamaInstruct/emg/visual_prompting/3-shot.jsonl
+[INFO] Using 9 few-shot examples (3 per label × 3 labels) || 2025-12-11 15:30:46
+[INFO] Generating few-shot reasoning examples... || 2025-12-11 15:30:47
+[INFO] Model = meta-llama/Llama-3.2-11B-Vision-Instruct || 2025-12-11 15:31:03
+[INFO] Few-shot examples used: 9 || 2025-12-11 15:31:03
+Batch prompting:   0%|          | 0/2 [00:00<?, ?it/s]Batch prompting:  50%|█████     | 1/2 [04:11<04:11, 251.76s/it]Batch prompting: 100%|██████████| 2/2 [06:17<00:00, 177.67s/it]Batch prompting: 100%|██████████| 2/2 [06:17<00:00, 188.78s/it]
+[INFO] Running Acc after idx 9: 0.4000 || 2025-12-11 15:35:14
+[INFO] Running Acc after idx 14: 0.3333 || 2025-12-11 15:37:20
+[INFO] ✅ Finished. Results saved → ./data/sample_generations/llamaInstruct/emg/visual_prompting/3-shot.jsonl || 2025-12-11 15:37:20
+Prompting complete for dataset=emg, model=meta-llama/Llama-3.2-11B-Vision-Instruct, n_shots=3.
+
+==============================================================
+Dataset:       emg
+Model:         meta-llama/Llama-3.2-11B-Vision-Instruct
+n_shots:       5
+Batch size:    10
+GPU(s):        2
+==============================================================
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:02,  1.35it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:02,  1.40it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:02<00:01,  1.43it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:02<00:00,  1.43it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.86it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.63it/s]
+
+========================================
+Master Log Session at 2025-12-11 15:37:31
+========================================
+
+[INFO] Clearing output file ./data/sample_generations/llamaInstruct/emg/visual_prompting/5-shot.jsonl || 2025-12-11 15:37:31
+Output JSONL: ./data/sample_generations/llamaInstruct/emg/visual_prompting/5-shot.jsonl
+[INFO] Using 15 few-shot examples (5 per label × 3 labels) || 2025-12-11 15:37:31
+[INFO] Generating few-shot reasoning examples... || 2025-12-11 15:37:32
+[INFO] Model = meta-llama/Llama-3.2-11B-Vision-Instruct || 2025-12-11 15:37:53
+[INFO] Few-shot examples used: 15 || 2025-12-11 15:37:53
+Batch prompting:   0%|          | 0/2 [00:00<?, ?it/s]Batch prompting:  50%|█████     | 1/2 [06:19<06:19, 379.35s/it]Batch prompting: 100%|██████████| 2/2 [09:22<00:00, 264.21s/it]Batch prompting: 100%|██████████| 2/2 [09:22<00:00, 281.48s/it]
+[INFO] Running Acc after idx 9: 0.4000 || 2025-12-11 15:44:12
+[INFO] Running Acc after idx 14: 0.3333 || 2025-12-11 15:47:16
+[INFO] ✅ Finished. Results saved → ./data/sample_generations/llamaInstruct/emg/visual_prompting/5-shot.jsonl || 2025-12-11 15:47:16
+Prompting complete for dataset=emg, model=meta-llama/Llama-3.2-11B-Vision-Instruct, n_shots=5.
+
+==============================================================
+Dataset:       emg
+Model:         meta-llama/Llama-3.2-11B-Vision
+n_shots:       0
+Batch size:    10
+GPU(s):        2
+==============================================================
+usage: llamaPrompting.py [-h] --dataset {ctu,emg,har,tee}
+                         [--model {meta-llama/Llama-3.2-11B-Vision-Instruct}]
+                         [--batch_size BATCH_SIZE] [--n_shots N_SHOTS]
+llamaPrompting.py: error: argument --model: invalid choice: 'meta-llama/Llama-3.2-11B-Vision' (choose from 'meta-llama/Llama-3.2-11B-Vision-Instruct')
+Prompting complete for dataset=emg, model=meta-llama/Llama-3.2-11B-Vision, n_shots=0.
+
+==============================================================
+Dataset:       emg
+Model:         meta-llama/Llama-3.2-11B-Vision
+n_shots:       3
+Batch size:    10
+GPU(s):        2
+==============================================================
+usage: llamaPrompting.py [-h] --dataset {ctu,emg,har,tee}
+                         [--model {meta-llama/Llama-3.2-11B-Vision-Instruct}]
+                         [--batch_size BATCH_SIZE] [--n_shots N_SHOTS]
+llamaPrompting.py: error: argument --model: invalid choice: 'meta-llama/Llama-3.2-11B-Vision' (choose from 'meta-llama/Llama-3.2-11B-Vision-Instruct')
+Prompting complete for dataset=emg, model=meta-llama/Llama-3.2-11B-Vision, n_shots=3.
+
+==============================================================
+Dataset:       emg
+Model:         meta-llama/Llama-3.2-11B-Vision
+n_shots:       5
+Batch size:    10
+GPU(s):        2
+==============================================================
+usage: llamaPrompting.py [-h] --dataset {ctu,emg,har,tee}
+                         [--model {meta-llama/Llama-3.2-11B-Vision-Instruct}]
+                         [--batch_size BATCH_SIZE] [--n_shots N_SHOTS]
+llamaPrompting.py: error: argument --model: invalid choice: 'meta-llama/Llama-3.2-11B-Vision' (choose from 'meta-llama/Llama-3.2-11B-Vision-Instruct')
+Prompting complete for dataset=emg, model=meta-llama/Llama-3.2-11B-Vision, n_shots=5.
+
+==============================================================
+Dataset:       tee
+Model:         meta-llama/Llama-3.2-11B-Vision-Instruct
+n_shots:       0
+Batch size:    10
+GPU(s):        2
+==============================================================
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:02,  1.47it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:01,  1.54it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:01<00:01,  1.57it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:02<00:00,  1.56it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:02<00:00,  2.08it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:02<00:00,  1.80it/s]
+
+========================================
+Master Log Session at 2025-12-11 15:47:36
+========================================
+
+[INFO] Clearing output file ./data/sample_generations/llamaInstruct/tee/visual_prompting/0-shot.jsonl || 2025-12-11 15:47:36
+Output JSONL: ./data/sample_generations/llamaInstruct/tee/visual_prompting/0-shot.jsonl
+[INFO] Zero-shot prompting (no few-shot examples). || 2025-12-11 15:47:36
+[INFO] Model = meta-llama/Llama-3.2-11B-Vision-Instruct || 2025-12-11 15:47:36
+[INFO] Few-shot examples used: 0 || 2025-12-11 15:47:36
+Batch prompting:   0%|          | 0/5 [00:00<?, ?it/s]Batch prompting:  20%|██        | 1/5 [00:17<01:10, 17.74s/it]Batch prompting:  40%|████      | 2/5 [00:38<00:58, 19.62s/it]Batch prompting:  60%|██████    | 3/5 [00:59<00:40, 20.36s/it]Batch prompting:  80%|████████  | 4/5 [01:18<00:19, 19.77s/it]Batch prompting: 100%|██████████| 5/5 [01:26<00:00, 15.25s/it]Batch prompting: 100%|██████████| 5/5 [01:26<00:00, 17.20s/it]
+[INFO] Running Acc after idx 9: 0.1000 || 2025-12-11 15:47:54
+[INFO] Running Acc after idx 19: 0.1000 || 2025-12-11 15:48:15
+[INFO] Running Acc after idx 29: 0.1667 || 2025-12-11 15:48:36
+[INFO] Running Acc after idx 39: 0.1250 || 2025-12-11 15:48:55
+[INFO] Running Acc after idx 41: 0.1429 || 2025-12-11 15:49:02
+[INFO] ✅ Finished. Results saved → ./data/sample_generations/llamaInstruct/tee/visual_prompting/0-shot.jsonl || 2025-12-11 15:49:02
+Prompting complete for dataset=tee, model=meta-llama/Llama-3.2-11B-Vision-Instruct, n_shots=0.
+
+==============================================================
+Dataset:       tee
+Model:         meta-llama/Llama-3.2-11B-Vision-Instruct
+n_shots:       3
+Batch size:    10
+GPU(s):        2
+==============================================================
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.27it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:02,  1.32it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:02<00:01,  1.34it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:03<00:00,  1.33it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.79it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.55it/s]
+
+========================================
+Master Log Session at 2025-12-11 15:49:13
+========================================
+
+[INFO] Clearing output file ./data/sample_generations/llamaInstruct/tee/visual_prompting/3-shot.jsonl || 2025-12-11 15:49:13
+Output JSONL: ./data/sample_generations/llamaInstruct/tee/visual_prompting/3-shot.jsonl
+[INFO] Using 21 few-shot examples (3 per label × 7 labels) || 2025-12-11 15:49:13
+[INFO] Generating few-shot reasoning examples... || 2025-12-11 15:49:14
+[INFO] Model = meta-llama/Llama-3.2-11B-Vision-Instruct || 2025-12-11 15:49:47
+[INFO] Few-shot examples used: 21 || 2025-12-11 15:49:47
+Batch prompting:   0%|          | 0/5 [00:00<?, ?it/s]Batch prompting:  20%|██        | 1/5 [07:51<31:27, 471.85s/it]Batch prompting:  40%|████      | 2/5 [15:10<22:36, 452.03s/it]Batch prompting:  60%|██████    | 3/5 [22:27<14:50, 445.40s/it]Batch prompting:  80%|████████  | 4/5 [29:59<07:27, 447.97s/it]Batch prompting: 100%|██████████| 5/5 [31:18<00:00, 314.88s/it]Batch prompting: 100%|██████████| 5/5 [31:18<00:00, 375.67s/it]
+[INFO] Running Acc after idx 9: 0.0000 || 2025-12-11 15:57:39
+[INFO] Running Acc after idx 19: 0.1500 || 2025-12-11 16:04:57
+[INFO] Running Acc after idx 29: 0.1333 || 2025-12-11 16:12:14
+[INFO] Running Acc after idx 39: 0.1000 || 2025-12-11 16:19:46
+[INFO] Running Acc after idx 41: 0.1190 || 2025-12-11 16:21:05
+[INFO] ✅ Finished. Results saved → ./data/sample_generations/llamaInstruct/tee/visual_prompting/3-shot.jsonl || 2025-12-11 16:21:05
+Prompting complete for dataset=tee, model=meta-llama/Llama-3.2-11B-Vision-Instruct, n_shots=3.
+
+==============================================================
+Dataset:       tee
+Model:         meta-llama/Llama-3.2-11B-Vision-Instruct
+n_shots:       5
+Batch size:    10
+GPU(s):        2
+==============================================================
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:02,  1.37it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:02,  1.43it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:02<00:01,  1.46it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:02<00:00,  1.47it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.72it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.58it/s]
+
+========================================
+Master Log Session at 2025-12-11 16:21:17
+========================================
+
+[INFO] Clearing output file ./data/sample_generations/llamaInstruct/tee/visual_prompting/5-shot.jsonl || 2025-12-11 16:21:17
+Output JSONL: ./data/sample_generations/llamaInstruct/tee/visual_prompting/5-shot.jsonl
+[INFO] Using 35 few-shot examples (5 per label × 7 labels) || 2025-12-11 16:21:17
+[INFO] Generating few-shot reasoning examples... || 2025-12-11 16:21:20
+[INFO] Model = meta-llama/Llama-3.2-11B-Vision-Instruct || 2025-12-11 16:22:09
+[INFO] Few-shot examples used: 35 || 2025-12-11 16:22:09
+Batch prompting:   0%|          | 0/5 [00:00<?, ?it/s]Batch prompting:   0%|          | 0/5 [00:15<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/hdd249/Classification/./src/llamaPrompting.py", line 350, in <module>
+    main()
+  File "/home/hdd249/Classification/./src/llamaPrompting.py", line 313, in main
+    out = prompter.get_completion(convo_prompts, batch=False)
+  File "/home/hdd249/Classification/src/utils/llamaPrompter.py", line 238, in get_completion
+    output_ids = self.model.generate(
+  File "/home/hdd249/miniconda3/envs/ClassificationEnv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/hdd249/miniconda3/envs/ClassificationEnv/lib/python3.10/site-packages/transformers/generation/utils.py", line 2564, in generate
+    result = decoding_method(
+  File "/home/hdd249/miniconda3/envs/ClassificationEnv/lib/python3.10/site-packages/transformers/generation/utils.py", line 2787, in _sample
+    outputs = model_forward(**model_inputs, return_dict=True)
+  File "/home/hdd249/miniconda3/envs/ClassificationEnv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/hdd249/miniconda3/envs/ClassificationEnv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/hdd249/miniconda3/envs/ClassificationEnv/lib/python3.10/site-packages/transformers/utils/generic.py", line 918, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/hdd249/miniconda3/envs/ClassificationEnv/lib/python3.10/site-packages/transformers/models/mllama/modeling_mllama.py", line 1656, in forward
+    outputs = self.model(
+  File "/home/hdd249/miniconda3/envs/ClassificationEnv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/hdd249/miniconda3/envs/ClassificationEnv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/hdd249/miniconda3/envs/ClassificationEnv/lib/python3.10/site-packages/transformers/utils/generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/home/hdd249/miniconda3/envs/ClassificationEnv/lib/python3.10/site-packages/transformers/utils/generic.py", line 918, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/hdd249/miniconda3/envs/ClassificationEnv/lib/python3.10/site-packages/transformers/models/mllama/modeling_mllama.py", line 1501, in forward
+    cross_attention_mask, full_text_row_masked_out_mask = _prepare_cross_attention_mask(
+  File "/home/hdd249/miniconda3/envs/ClassificationEnv/lib/python3.10/site-packages/transformers/models/mllama/modeling_mllama.py", line 60, in _prepare_cross_attention_mask
+    inverted_cross_attn_mask = (1.0 - cross_attention_mask).to(dtype)
+  File "/home/hdd249/miniconda3/envs/ClassificationEnv/lib/python3.10/site-packages/torch/_tensor.py", line 45, in wrapped
+    return f(self, *args, **kwargs)
+  File "/home/hdd249/miniconda3/envs/ClassificationEnv/lib/python3.10/site-packages/torch/_tensor.py", line 1075, in __rsub__
+    return _C._VariableFunctions.rsub(self, other)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 17.65 GiB. GPU 0 has a total capacity of 93.01 GiB of which 16.75 GiB is free. Including non-PyTorch memory, this process has 76.25 GiB memory in use. Of the allocated memory 65.31 GiB is allocated by PyTorch, and 10.28 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Prompting complete for dataset=tee, model=meta-llama/Llama-3.2-11B-Vision-Instruct, n_shots=5.
+
+==============================================================
+Dataset:       tee
+Model:         meta-llama/Llama-3.2-11B-Vision
+n_shots:       0
+Batch size:    10
+GPU(s):        2
+==============================================================
+usage: llamaPrompting.py [-h] --dataset {ctu,emg,har,tee}
+                         [--model {meta-llama/Llama-3.2-11B-Vision-Instruct}]
+                         [--batch_size BATCH_SIZE] [--n_shots N_SHOTS]
+llamaPrompting.py: error: argument --model: invalid choice: 'meta-llama/Llama-3.2-11B-Vision' (choose from 'meta-llama/Llama-3.2-11B-Vision-Instruct')
+Prompting complete for dataset=tee, model=meta-llama/Llama-3.2-11B-Vision, n_shots=0.
+
+==============================================================
+Dataset:       tee
+Model:         meta-llama/Llama-3.2-11B-Vision
+n_shots:       3
+Batch size:    10
+GPU(s):        2
+==============================================================
+usage: llamaPrompting.py [-h] --dataset {ctu,emg,har,tee}
+                         [--model {meta-llama/Llama-3.2-11B-Vision-Instruct}]
+                         [--batch_size BATCH_SIZE] [--n_shots N_SHOTS]
+llamaPrompting.py: error: argument --model: invalid choice: 'meta-llama/Llama-3.2-11B-Vision' (choose from 'meta-llama/Llama-3.2-11B-Vision-Instruct')
+Prompting complete for dataset=tee, model=meta-llama/Llama-3.2-11B-Vision, n_shots=3.
+
+==============================================================
+Dataset:       tee
+Model:         meta-llama/Llama-3.2-11B-Vision
+n_shots:       5
+Batch size:    10
+GPU(s):        2
+==============================================================
+usage: llamaPrompting.py [-h] --dataset {ctu,emg,har,tee}
+                         [--model {meta-llama/Llama-3.2-11B-Vision-Instruct}]
+                         [--batch_size BATCH_SIZE] [--n_shots N_SHOTS]
+llamaPrompting.py: error: argument --model: invalid choice: 'meta-llama/Llama-3.2-11B-Vision' (choose from 'meta-llama/Llama-3.2-11B-Vision-Instruct')
+Prompting complete for dataset=tee, model=meta-llama/Llama-3.2-11B-Vision, n_shots=5.
+
+
+
+FILE DONE RUNNING 🎉🎉🎉
+
